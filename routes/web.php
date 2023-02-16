@@ -10,6 +10,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::stripeWebhooks('stripe-webhook');
+
 Route::get('/privacy', [SiteController::class, 'show_privacy']);
 Route::get('/terms', [SiteController::class, 'show_terms']);
 
