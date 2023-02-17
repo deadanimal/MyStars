@@ -18,26 +18,12 @@ class ContentController extends Controller
             $contents = Content::all();
             return view('admin.content_list', compact('contents'));
         } else if ($user_type == 'brand') {
-            
+            $contents = Content::all();
+            return view('brand.content_list', compact('contents'));            
         } else {
             $contents = Content::where('user_id', $user_id)->get();
             return view('creator.content_list', compact('contents'));
         }        
-    }
-
-    public function create_content(Request $request) {
-
-        Content::create([
-            'url' => $request->url,
-            'status' => 'created',
-            'brand_id' => $request->brand_id,
-            'campaign_id' => $request->campaign_id,
-            'user_id' => $request->user()->id,
-        ]);
-
-        Alert::success('Success', 'A new content has been created!');
-
-        return back();
     }
 
     public function show_content(Request $request) {
@@ -58,7 +44,21 @@ class ContentController extends Controller
             $content = Content::find($id);
             return view('creator.content_detail', compact('content'));
         }           
-    }
+    }    
 
+    public function create_content(Request $request) {
+
+        Content::create([
+            'url' => $request->url,
+            'status' => 'created',
+            'brand_id' => $request->brand_id,
+            'campaign_id' => $request->campaign_id,
+            'user_id' => $request->user()->id,
+        ]);
+
+        Alert::success('Success', 'A new content has been created!');
+
+        return back();
+    }
 
 }

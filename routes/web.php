@@ -5,20 +5,26 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\CampaignController;
 use App\Http\Controllers\ContentController;
+use App\Http\Controllers\ProfileController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [SiteController::class, 'show_home']);
 
 Route::stripeWebhooks('stripe-webhook');
 
 Route::get('/privacy', [SiteController::class, 'show_privacy']);
 Route::get('/terms', [SiteController::class, 'show_terms']);
+Route::get('/afeezaziz', [SiteController::class, 'show_afeezaziz']);
 
+Route::get('/@{username}', [ProfileController::class, 'show_username']);
 
 Route::middleware('auth')->group(function () {
     
     Route::get('/dashboard', [SiteController::class, 'show_dashboard']);
+    
+    Route::get('/profile', [ProfileController::class, 'show_profile']);    
+    Route::put('/profile', [ProfileController::class, 'update_profile']);    
+    Route::put('/profile/password', [ProfileController::class, 'update_password']);    
+    Route::put('/profile/pfp', [ProfileController::class, 'update_pfp']);    
 
     Route::get('/tickets', [SiteController::class, 'show_tickets']);
     Route::post('/tickets', [SiteController::class, 'create_ticket']);
