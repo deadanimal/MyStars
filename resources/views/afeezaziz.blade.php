@@ -7,7 +7,7 @@
     <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
     <meta name="keywords"
         content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, dark mode, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+    <meta name="author" content="Afeez aziz">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
@@ -167,8 +167,8 @@
                 <div class="row align-items-center justify-content-center pt-3 pt-sm-4 mt-sm-3">
                     <div class="col-sm-9 col-md-8 col-lg-7 offset-lg-1 order-md-2 pb-3 pb-sm-0 mt-md-n5 mb-4 mb-sm-5">
                         <div class="ps-md-4 ps-lg-0 mt-md-n4 mt-lg-n5">
-                            <h1 class="display-5 mb-lg-4">Hello there, I'm <span class='text-dark fw-bolder'>Afeez Aziz</span><br>AI &amp; social media entreprenuer</h1>
-                            <p class="fs-lg">I run businesses..</p>
+                            <h1 class="display-5 mb-lg-4">Hey, I'm <span class='text-dark fw-bolder'>Afeez Aziz</span>.<br>I love artificial intelligence, crypto &amp; social media</h1>
+                            <p class="fs-lg">I educate the public on how to use tools for AI, crypto, and social media to make the world a better place. </p>
                             <div style="max-width: 24rem;">
                                 <div class="d-table text-dark mx-auto">
                                     <div class="ms-n4">
@@ -186,7 +186,7 @@
                                         <button class="btn btn-lg btn-primary px-4" type="button"><span
                                                 class="text-light px-sm-2">$14.<sup>99</sup> / month</span></button>
                                     </div>
-                                    <div>
+                                    <div class="pe-3 me-sm-3">
                                         <div class="d-table position-relative text-dark mt-n3 mb-2">
                                             <h3
                                                 class="h5 fw-bold mb-0 position-absolute start-50 top-50 translate-middle">
@@ -200,10 +200,15 @@
                                         </div>
                                         <button class="btn btn-lg bg-dark px-4" type="button"><span
                                                 class="text-light px-sm-2">$89.<sup>99</sup> / year</span></button>
-                                        <div class="d-flex align-items-center pt-2 mt-1"><span
+                                        {{-- <div class="d-flex align-items-center pt-2 mt-1"><span
                                                 class="badge bg-danger text-light rounded-pill me-2">Expires</span><span
-                                                class="fs-sm">01/12 8:00 pm</span></div>
+                                                class="fs-sm">01/12 8:00 pm</span></div> --}}
                                     </div>
+                                    <div class="pe-3 me-sm-3">
+                                        <h3 class="h5 fw-bold mb-4">Monthly</h3>
+                                        <button class="btn btn-lg btn-primary px-4" type="button"><span
+                                                class="text-light px-sm-2">$14.<sup>99</sup> / month</span></button>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
@@ -220,7 +225,7 @@
                 <h2 class="pb-3 mb-2 mb-sm-3 mb-lg-4">I'm a 32 year old blogger, fitness instructor and content
                     creator. I was recognized as the <span class='text-primary'>top 100 sport influencers</span> under
                     the age of 30. Over 25K people have already changed their life for the better with me.</h2>
-                <p class="fs-lg">Subscribe to get free webinars:</p>
+                <p class="fs-lg">Follow me on social media platforms:</p>
                 <div class="d-flex">
                     <a class="btn btn-outline-secondary btn-icon btn-sm btn-instagram me-3"
                         href="https://www.instagram.com/afeezabdulaziz/">
@@ -296,7 +301,7 @@
             <div class="bg-secondary position-absolute top-0 start-0 w-100 h-100 d-lg-none"
                 style="border-top-left-radius: 2.25rem; border-bottom-right-radius: 2.25rem;"></div>
             <div class="container position-relative zindex-2 py-5 mt-xl-2 mb-lg-2 mb-xl-3 mb-xxl-5 mt-xxl-4">
-                <h2 class="h1 pt-xxl-1 pb-4 mb-2 mb-lg-3">Guides</h2>
+                <h2 class="h1 pt-xxl-1 pb-4 mb-2 mb-lg-3">My Startups</h2>
                 <!-- Swiper slider-->
                 <div class="swiper"
                     data-swiper-options="
@@ -325,8 +330,8 @@
                                         src="assets/img/landing/influencer/guides/01.jpg" alt="Guide">
                                 </div>
                                 <div class="card-body pb-4">
-                                    <div class="text-primary fw-bold pb-2 mb-1">$125.00</div>
-                                    <h3 class="h4">Effective weight loss</h3>
+                                    <div class="text-primary fw-bold pb-2 mb-1">Crypto</div>
+                                    <h3 class="h4">Red Pill Labs</h3>
                                     <ul class="fs-sm ps-4 mb-0">
                                         <li class="mb-2">Ut nunc ultricies nibh blandit odio in.</li>
                                         <li class="mb-2">Nibh viverra volutpat viverra.</li>
@@ -334,10 +339,37 @@
                                     </ul>
                                 </div>
                                 <div class="card-footer border-0 pt-0">
-                                    <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                                    <button class="btn btn-outline-primary w-100" type="button">View</button>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="card h-100 border-0 rounded-4 pb-3">
+                                <div class="position-relative ignore-dark-mode">
+                                    <div class="card-body position-absolute start-0 bottom-0 py-4">
+                                        <div class="d-table badge bg-danger rounded-pill mb-2">6 programs</div>
+                                        <div class="d-table badge bg-light text-nav rounded-pill">&gt; 230 exercises
+                                        </div>
+                                    </div><img class="rounded-4 rounded-bottom-0"
+                                        src="assets/img/landing/influencer/guides/01.jpg" alt="Guide">
+                                </div>
+                                <div class="card-body pb-4">
+                                    <div class="text-primary fw-bold pb-2 mb-1">Social Media</div>
+                                    <h3 class="h4">My Stars</h3>
+                                    <ul class="fs-sm ps-4 mb-0">
+                                        <li class="mb-2">Ut nunc ultricies nibh blandit odio in.</li>
+                                        <li class="mb-2">Nibh viverra volutpat viverra.</li>
+                                        <li class="mb-2">Ac lacus ut viverra iaculis neque scelerisque.</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer border-0 pt-0">
+                                    <button class="btn btn-outline-primary w-100" type="button">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                         <!-- Item-->
                         <div class="swiper-slide h-auto">
                             <div class="card h-100 border-0 rounded-4 pb-3">
@@ -350,7 +382,7 @@
                                         src="assets/img/landing/influencer/guides/02.jpg" alt="Guide">
                                 </div>
                                 <div class="card-body pb-4">
-                                    <div class="text-primary fw-bold pb-2 mb-1">$154.99</div>
+                                    <div class="text-primary fw-bold pb-2 mb-1">Artificial Intelligence</div>
                                     <h3 class="h4">Beginner to expert guide</h3>
                                     <ul class="fs-sm ps-4 mb-0">
                                         <li class="mb-2">Nutrition guides for the best overall results.</li>
@@ -359,10 +391,11 @@
                                     </ul>
                                 </div>
                                 <div class="card-footer border-0 pt-0">
-                                    <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                                    <button class="btn btn-outline-primary w-100" type="button">View</button>
                                 </div>
                             </div>
                         </div>
+
                         <!-- Item-->
                         <div class="swiper-slide h-auto">
                             <div class="card h-100 border-0 rounded-4 pb-3">
@@ -375,8 +408,8 @@
                                         src="assets/img/landing/influencer/guides/03.jpg" alt="Guide">
                                 </div>
                                 <div class="card-body pb-4">
-                                    <div class="text-primary fw-bold pb-2 mb-1">$121.00</div>
-                                    <h3 class="h4">Yoga for pregnancy</h3>
+                                    <div class="text-primary fw-bold pb-2 mb-1">Software Development</div>
+                                    <h3 class="h4">Pipeline Network</h3>
                                     <ul class="fs-sm ps-4 mb-0">
                                         <li class="mb-2">Adipiscing vulputate ever in potenti velit.</li>
                                         <li class="mb-2">Non metus orci convallis posuere.</li>
@@ -384,7 +417,7 @@
                                     </ul>
                                 </div>
                                 <div class="card-footer border-0 pt-0">
-                                    <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                                    <button class="btn btn-outline-primary w-100" type="button">View</button>
                                 </div>
                             </div>
                         </div>
@@ -534,7 +567,7 @@
                 </div>
             </div>
         </section>
-        <!-- Subscription-->
+        
         <section class="container position-relative py-5 my-lg-3 my-xl-4 my-xxl-5">
             <div class="position-absolute top-0 end-0 d-none d-md-block"
                 style="animation: rotate-cw 70s linear infinite; margin-top: -190px; margin-right: 100px;">
@@ -554,7 +587,7 @@
                 </div>
             </div>
         </section>
-        <!-- CTA-->
+        
         <section class="ignore-dark-mode position-relative overflow-hidden">
             <div class="position-absolute top-0 start-0 w-100 h-100" data-aos="zoom-in" data-aos-duration="600"
                 data-aos-offset="300" data-disable-parallax-down="md">
@@ -595,108 +628,7 @@
                 </div>
             </div>
         </section>
-        <!-- Instagram-->
-        <section class="pt-2 pt-sm-4 pt-md-5">
-            <div class="container pt-5 mt-1 mt-sm-0 mt-lg-2 mt-xl-4 mt-xxl-5">
-                <div class="d-flex position-relative align-items-center"><a
-                        class="btn btn-icon btn-primary stretched-link me-3 me-sm-4" href="#"><i
-                            class="ai-instagram"></i></a>
-                    <h2 class="mb-0">jane_cooper</h2>
-                </div>
-            </div>
-            <div class="overflow-auto" data-simplebar>
-                <div class="row row-cols-8 g-0 pt-4 pb-2 pb-xl-0 mt-2 mt-lg-3" style="min-width: 1200px;">
-                    <div class="col"><a class="card-hover zoom-effect d-block position-relative" href="#">
-                            <div
-                                class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 zindex-2 opacity-0">
-                                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-60"></div>
-                                <div class="d-flex align-items-center text-light position-relative zindex-2"><i
-                                        class="ai-heart me-1"></i><span class="text-light fs-sm me-3">2048</span><i
-                                        class="ai-message me-1"></i><span class="text-light fs-sm">320</span></div>
-                            </div>
-                            <div class="zoom-effect-wrapper"><img class="zoom-effect-img"
-                                    src="assets/img/landing/influencer/instagram/01.jpg" alt="Image"></div>
-                        </a></div>
-                    <div class="col"><a class="card-hover zoom-effect d-block position-relative" href="#">
-                            <div
-                                class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 zindex-2 opacity-0">
-                                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-60"></div>
-                                <div class="d-flex align-items-center text-light position-relative zindex-2"><i
-                                        class="ai-heart me-1"></i><span class="text-light fs-sm me-3">1764</span><i
-                                        class="ai-message me-1"></i><span class="text-light fs-sm">283</span></div>
-                            </div>
-                            <div class="zoom-effect-wrapper"><img class="zoom-effect-img"
-                                    src="assets/img/landing/influencer/instagram/02.jpg" alt="Image"></div>
-                        </a></div>
-                    <div class="col"><a class="card-hover zoom-effect d-block position-relative" href="#">
-                            <div
-                                class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 zindex-2 opacity-0">
-                                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-60"></div>
-                                <div class="d-flex align-items-center text-light position-relative zindex-2"><i
-                                        class="ai-heart me-1"></i><span class="text-light fs-sm me-3">4560</span><i
-                                        class="ai-message me-1"></i><span class="text-light fs-sm">417</span></div>
-                            </div>
-                            <div class="zoom-effect-wrapper"><img class="zoom-effect-img"
-                                    src="assets/img/landing/influencer/instagram/03.jpg" alt="Image"></div>
-                        </a></div>
-                    <div class="col"><a class="card-hover zoom-effect d-block position-relative" href="#">
-                            <div
-                                class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 zindex-2 opacity-0">
-                                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-60"></div>
-                                <div class="d-flex align-items-center text-light position-relative zindex-2"><i
-                                        class="ai-heart me-1"></i><span class="text-light fs-sm me-3">1505</span><i
-                                        class="ai-message me-1"></i><span class="text-light fs-sm">274</span></div>
-                            </div>
-                            <div class="zoom-effect-wrapper"><img class="zoom-effect-img"
-                                    src="assets/img/landing/influencer/instagram/04.jpg" alt="Image"></div>
-                        </a></div>
-                    <div class="col"><a class="card-hover zoom-effect d-block position-relative" href="#">
-                            <div
-                                class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 zindex-2 opacity-0">
-                                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-60"></div>
-                                <div class="d-flex align-items-center text-light position-relative zindex-2"><i
-                                        class="ai-heart me-1"></i><span class="text-light fs-sm me-3">3708</span><i
-                                        class="ai-message me-1"></i><span class="text-light fs-sm">198</span></div>
-                            </div>
-                            <div class="zoom-effect-wrapper"><img class="zoom-effect-img"
-                                    src="assets/img/landing/influencer/instagram/05.jpg" alt="Image"></div>
-                        </a></div>
-                    <div class="col"><a class="card-hover zoom-effect d-block position-relative" href="#">
-                            <div
-                                class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 zindex-2 opacity-0">
-                                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-60"></div>
-                                <div class="d-flex align-items-center text-light position-relative zindex-2"><i
-                                        class="ai-heart me-1"></i><span class="text-light fs-sm me-3">2925</span><i
-                                        class="ai-message me-1"></i><span class="text-light fs-sm">409</span></div>
-                            </div>
-                            <div class="zoom-effect-wrapper"><img class="zoom-effect-img"
-                                    src="assets/img/landing/influencer/instagram/06.jpg" alt="Image"></div>
-                        </a></div>
-                    <div class="col"><a class="card-hover zoom-effect d-block position-relative" href="#">
-                            <div
-                                class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 zindex-2 opacity-0">
-                                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-60"></div>
-                                <div class="d-flex align-items-center text-light position-relative zindex-2"><i
-                                        class="ai-heart me-1"></i><span class="text-light fs-sm me-3">1348</span><i
-                                        class="ai-message me-1"></i><span class="text-light fs-sm">120</span></div>
-                            </div>
-                            <div class="zoom-effect-wrapper"><img class="zoom-effect-img"
-                                    src="assets/img/landing/influencer/instagram/07.jpg" alt="Image"></div>
-                        </a></div>
-                    <div class="col"><a class="card-hover zoom-effect d-block position-relative" href="#">
-                            <div
-                                class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 zindex-2 opacity-0">
-                                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-60"></div>
-                                <div class="d-flex align-items-center text-light position-relative zindex-2"><i
-                                        class="ai-heart me-1"></i><span class="text-light fs-sm me-3">963</span><i
-                                        class="ai-message me-1"></i><span class="text-light fs-sm">98</span></div>
-                            </div>
-                            <div class="zoom-effect-wrapper"><img class="zoom-effect-img"
-                                    src="assets/img/landing/influencer/instagram/08.jpg" alt="Image"></div>
-                        </a></div>
-                </div>
-            </div>
-        </section>
+
     </main>
     <!-- Footer-->
     <footer class="footer py-5">
@@ -728,13 +660,7 @@
                     <i class="ai-linkedin"></i>
                 </a>
             </div>
-            <div class="nav flex-sm-nowrap justify-content-center mb-3 mb-sm-4 mb-lg-0"><a
-                    class="nav-link fw-normal border-end-lg px-2 px-sm-3 px-lg-4 py-1 py-sm-0 mx-1 mx-sm-0 mx-xl-2"
-                    href="#">Support</a><a
-                    class="nav-link fw-normal border-end-lg px-2 px-sm-3 px-lg-4 py-1 py-sm-0 mx-1 mx-sm-0 mx-xl-2"
-                    href="#">Privacy Policy</a><a
-                    class="nav-link fw-normal px-2 px-sm-3 px-lg-4 py-1 py-sm-0 mx-1 mx-sm-0 mx-xl-2"
-                    href="#">Terms &amp; Conditions</a></div>
+            <div class="nav flex-sm-nowrap justify-content-center mb-3 mb-sm-4 mb-lg-0"></div>
             <p class="text-muted mb-0">&copy; All rights reserved</p>
         </div>
     </footer>
