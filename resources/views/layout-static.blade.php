@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Around | Marketing Agency</title>
-    <!-- SEO Meta Tags-->
+    <title>My Stars </title>
+    
     <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
     <meta name="keywords"
         content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, dark mode, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
-    <!-- Viewport-->
+    <meta name="author" content="My Stars">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#080032">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="white">
-    <!-- Theme mode-->
+    
     <script>
         let mode = window.localStorage.getItem('mode'),
             root = document.getElementsByTagName('html')[0];
@@ -30,7 +30,6 @@
             root.classList.remove('dark-mode');
         }
     </script>
-    <!-- Page loading styles-->
     <style>
         .page-loading {
             position: fixed;
@@ -130,7 +129,6 @@
             }
         }
     </style>
-    <!-- Page loading scripts-->
     <script>
         (function() {
             window.onload = function() {
@@ -142,15 +140,12 @@
             };
         })();
     </script>
-    <!-- Import Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet" id="google-font">
-    <!-- Vendor styles-->
     <link rel="stylesheet" media="screen" href="/assets/vendor/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" media="screen" href="/assets/vendor/aos/dist/aos.css" />
-    <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
 </head>
 <!-- Body-->
@@ -166,7 +161,7 @@
     <main class="page-wrapper">
         <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
         <header class="navbar navbar-expand-lg fixed-top">
-            <div class="container"><a class="navbar-brand pe-sm-3" href="index.html"><span
+            <div class="container"><a class="navbar-brand pe-sm-3" href="/"><span
                         class="text-primary flex-shrink-0 me-2">
                         <svg version="1.1" width="35" height="32" viewBox="0 0 36 33"
                             xmlns="http://www.w3.org/2000/svg">
@@ -179,8 +174,7 @@
                     <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
                     <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
                 </div><a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex"
-                    href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank"
-                    rel="noopener"><i class="ai-cart fs-xl me-2 ms-n1"></i>Buy now</a>
+                    href="/dashboard"><i class="ai-cart fs-xl me-2 ms-n1"></i>Dashboard</a>
                 <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
                 <nav class="collapse navbar-collapse" id="navbarNav">
@@ -401,7 +395,7 @@
                     </ul>
                     <div class="d-sm-none p-3 mt-n3"><a class="btn btn-primary w-100  mb-1"
                             href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/"
-                            target="_blank" rel="noopener"><i class="ai-cart fs-xl me-2 ms-n1"></i>Buy now</a></div>
+                            target="_blank" rel="noopener"><i class="ai-cart fs-xl me-2 ms-n1"></i>Dashboard</a></div>
                 </nav>
             </div>
         </header>
@@ -466,13 +460,13 @@
                 stroke-width="1.5" stroke-miterlimit="10"></circle>
         </svg><i class="ai-arrow-up"></i></a>
     <!-- Vendor scripts: js libraries and plugins-->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/aos/dist/aos.js"></script>
     <!-- Main theme script-->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="/assets/js/theme.min.js"></script>
 </body>
 
 </html>

@@ -35,9 +35,8 @@ class ProfileController extends Controller
 
         public function update_pfp(Request $request) {
             $user = $request->user();
-            $user->update([
-                'profile_picture' => $request->file('profile_picture')->store('mystars/profile_picture')
-            ]);
+            $user->profile_picture = $request->file('profile_picture')->store('mystars/profile_picture');
+            $user->save();
             Alert::success('Success', 'Profile picture has been updated');
             return back(); 
         }
