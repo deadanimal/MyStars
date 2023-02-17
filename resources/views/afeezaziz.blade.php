@@ -167,7 +167,7 @@
                 <div class="row align-items-center justify-content-center pt-3 pt-sm-4 mt-sm-3">
                     <div class="col-sm-9 col-md-8 col-lg-7 offset-lg-1 order-md-2 pb-3 pb-sm-0 mt-md-n5 mb-4 mb-sm-5">
                         <div class="ps-md-4 ps-lg-0 mt-md-n4 mt-lg-n5">
-                            <h1 class="display-5 mb-lg-4">Hello there, I'm <span class='text-dark fw-bolder'>Afeez Aziz</span><br>Wellness &amp; lifestyle influencer</h1>
+                            <h1 class="display-5 mb-lg-4">Hello there, I'm <span class='text-dark fw-bolder'>Afeez Aziz</span><br>AI &amp; social media entreprenuer</h1>
                             <p class="fs-lg">Workouts designed for optimal results. Start your journey to wellness
                                 with me!</p>
                             <div style="max-width: 24rem;">
