@@ -186,6 +186,15 @@
                     <div class="dropdown-menu dropdown-menu-end my-1">
 
                         @if (Auth::user()->user_type == 'admin')
+                            <a class="dropdown-item" href="/campaigns">
+                                Campaign
+                            </a>
+                            <a class="dropdown-item" href="/contents">
+                                Content
+                            </a>
+                            <a class="dropdown-item" href="/finance">
+                                Finance
+                            </a>
                         @elseif(Auth::user()->user_type == 'brand')
                             <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Dashboard</h6>
                             <a class="dropdown-item" href="/create-campaign">
@@ -235,7 +244,7 @@
                         @endif
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/guides"><i
-                            class="ai-help fs-base opacity-70 me-2 mt-n1"></i>Guide</a>                        
+                                class="ai-help fs-base opacity-70 me-2 mt-n1"></i>Guide</a>
                         <form action="/logout" method="POST">
                             @csrf
                             <button class="dropdown-item" type="submit"><i
@@ -268,6 +277,17 @@
                                 </div>
 
                                 @if (Auth::user()->user_type == 'admin')
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/campaigns">
+                                        Campaign
+                                    </a>
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/contents">
+                                        Content
+                                    </a>
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/finance">
+                                        Finance
+                                    </a>   
+                                                                                                     
+
                                 @elseif(Auth::user()->user_type == 'brand')
                                     <nav class="nav flex-column pb-2 pb-lg-4 mb-1">
                                         <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4>
@@ -315,7 +335,7 @@
                                 <nav class="nav flex-column">
                                     <a class="nav-link fw-semibold py-2 px-0" href="/guides">
                                         <i class="ai-help fs-5 opacity-60 me-2"></i>Guide
-                                    </a>                                    
+                                    </a>
                                     <form action="/logout" method="POST">
                                         @csrf
                                         <button class="nav-link fw-semibold py-2 px-0" type="submit">
@@ -364,7 +384,7 @@
                             class="btn btn-icon btn-sm btn-secondary btn-twitter rounded-circle mx-2 ms-sm-0 me-sm-3"
                             href="#"><i class="ai-twitter"></i></a>
 
-                        </div>
+                    </div>
                 </div> All rights reserved.
             </div>
         </div>
