@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cashout;
 use App\Models\Earning;
+use App\Models\Invoice;
 use App\Models\Wallet;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -17,6 +18,16 @@ class WalletController extends Controller
         $wallet = Wallet::firstOrCreate(['user_id' => $user->id]);
         
         return view('wallet', compact('user', 'wallet'));
+    }
+
+    public function show_invoices(Request $request) {
+        $user = $request->user();
+
+        if($user->user_type == 'brand') {
+            return redirect('https://billing.stripe.com/p/login/00gcPT5wmcZQfYIfYY');
+        } else {
+            
+        }
     }
 
     public function to_cashout(Request $request) {
@@ -77,18 +88,5 @@ class WalletController extends Controller
         return back();
     }     
 
-    public function show_earnings(Request $request) {
-        $user_id = $request->user()->id;
-        $user_type = $request->user()->user_type;
-        
-        if($user_type == 'admin') {
-            $earnings = Earning::all();
-            return view('admin.earning_list', compact('earnings'));
-        } else if ($user_type == 'brand') {
-                      
-        } else {
-            $earnings = Earning::where('user_id', $user_id)->get();
-            return view('creator.earning_list', compact('earnings'));
-        }        
-    }    
+
 }

@@ -131,18 +131,6 @@
         }
     </style>
 
-    <script>
-        (function() {
-            window.onload = function() {
-                const preloader = document.querySelector('.page-loading');
-                preloader.classList.remove('active');
-                setTimeout(function() {
-                    preloader.remove();
-                }, 1500);
-            };
-        })();
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
@@ -175,24 +163,14 @@
 <!-- Body-->
 
 <body class="bg-secondary">
-    <!-- Page loading spinner-->
-    <div class="page-loading active">
-        <div class="page-loading-inner">
-            <div class="page-spinner"></div><span>Loading...</span>
-        </div>
-    </div>
+
     <!-- Page wrapper-->
     <main class="page-wrapper">
         <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
         <header class="navbar navbar-expand-lg fixed-top">
             <div class="container"><a class="navbar-brand pe-sm-3" href="/dashboard"><span
                         class="text-primary flex-shrink-0 me-2">
-                        <svg version="1.1" width="35" height="32" viewBox="0 0 36 33"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor"
-                                d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z">
-                            </path>
-                        </svg></span>Around</a>
+                    </span>My Stars</a>
                 <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
                     <input class="form-check-input" type="checkbox" id="theme-mode">
                     <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
@@ -207,28 +185,54 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-end my-1">
 
-                        <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Dashboard</h6>
-                        <a class="dropdown-item" href="/campaigns">
-                            <i class="ai-bulb fs-lg opacity-70 me-2"></i>Explore
-                        </a>
-                        <a class="dropdown-item" href="/contents">
-                            <i class="ai-heart fs-lg opacity-70 me-2"></i>Content
-                        </a>
-                        <a class="dropdown-item" href="/wallet/earnings">
-                            <i class="ai-activity fs-lg opacity-70 me-2"></i>Earnings
-                        </a>
-                        {{-- <a class="dropdown-item d-flex align-items-center" href="/tickets">
+                        @if (Auth::user()->user_type == 'admin')
+                        @elseif(Auth::user()->user_type == 'brand')
+                            <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Dashboard</h6>
+                            <a class="dropdown-item" href="/create-campaign">
+                                <i class="ai-bulb fs-lg opacity-70 me-2"></i> Ideate
+                            </a>
+                            <a class="dropdown-item" href="/campaigns">
+                                <i class="ai-heart fs-lg opacity-70 me-2"></i>Campaign
+                            </a>
+                            <a class="dropdown-item" href="/analytics">
+                                <i class="ai-activity fs-lg opacity-70 me-2"></i>Analytics
+                            </a>
+                            {{-- <a class="dropdown-item d-flex align-items-center" href="/tickets">
+                        <i class="ai-messages fs-lg opacity-70 me-2"></i>Chat
+                    </a> --}}
+
+                            <div class="dropdown-divider"></div>
+
+                            <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Account</h6>
+                            <a class="dropdown-item" href="/profile">
+                                <i class="ai-user-check fs-lg opacity-70 me-2"></i>Profile
+                            </a>
+                            <a class="dropdown-item" href="/invoices"><i
+                                    class="ai-wallet fs-base opacity-70 me-2 mt-n1"></i>Invoice</a>
+                        @else
+                            <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Dashboard</h6>
+                            <a class="dropdown-item" href="/campaigns">
+                                <i class="ai-bulb fs-lg opacity-70 me-2"></i>Explore
+                            </a>
+                            <a class="dropdown-item" href="/contents">
+                                <i class="ai-heart fs-lg opacity-70 me-2"></i>Content
+                            </a>
+                            <a class="dropdown-item" href="/analytics">
+                                <i class="ai-activity fs-lg opacity-70 me-2"></i>Analytics
+                            </a>
+                            {{-- <a class="dropdown-item d-flex align-items-center" href="/tickets">
                             <i class="ai-messages fs-lg opacity-70 me-2"></i>Chat
                         </a> --}}
 
-                        <div class="dropdown-divider"></div>
+                            <div class="dropdown-divider"></div>
 
-                        <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Account</h6>
-                        <a class="dropdown-item" href="/profile">
-                            <i class="ai-user-check fs-lg opacity-70 me-2"></i>Profile
-                        </a>
-                        <a class="dropdown-item" href="/wallet"><i
-                                class="ai-wallet fs-base opacity-70 me-2 mt-n1"></i>Wallet</a>
+                            <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Account</h6>
+                            <a class="dropdown-item" href="/profile">
+                                <i class="ai-user-check fs-lg opacity-70 me-2"></i>Profile
+                            </a>
+                            <a class="dropdown-item" href="/wallet"><i
+                                    class="ai-wallet fs-base opacity-70 me-2 mt-n1"></i>Wallet</a>
+                        @endif
                         <div class="dropdown-divider"></div>
                         <form action="/logout" method="POST">
                             @csrf
@@ -260,26 +264,52 @@
                                     <h3 class="h5 mb-1">{{ Auth::user()->name }}</h3>
                                     <p class="fs-sm text-muted mb-0">{{ Auth::user()->email }}</p>
                                 </div>
-                                <nav class="nav flex-column pb-2 pb-lg-4 mb-1">
-                                    <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4>
-                                    <a class="nav-link fw-semibold py-2 px-0" href="/campaigns">
-                                        <i class="ai-bulb fs-5 opacity-60 me-2"></i>Explore</a>
-                                    <a class="nav-link fw-semibold py-2 px-0" href="/contents">
-                                        <i class="ai-heart fs-5 opacity-60 me-2"></i>Content</a>
-                                    <a class="nav-link fw-semibold py-2 px-0" href="/wallet/earnings">
-                                        <i class="ai-activity fs-5 opacity-60 me-2"></i>Earnings</a>
-                                    {{-- <a class="nav-link fw-semibold py-2 px-0" href="account-favorites.html">
+
+                                @if (Auth::user()->user_type == 'admin')
+                                @elseif(Auth::user()->user_type == 'brand')
+                                    <nav class="nav flex-column pb-2 pb-lg-4 mb-1">
+                                        <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/create-campaign">
+                                            <i class="ai-bulb fs-5 opacity-60 me-2"></i>Ideate</a>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/campaigns">
+                                            <i class="ai-heart fs-5 opacity-60 me-2"></i>Campaign</a>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/analytics">
+                                            <i class="ai-activity fs-5 opacity-60 me-2"></i>Analytics</a>
+                                        {{-- <a class="nav-link fw-semibold py-2 px-0" href="account-favorites.html">
+                                    <i class="ai-heart fs-5 opacity-60 me-2"></i>Favorites</a> --}}
+                                    </nav>
+                                    <nav class="nav flex-column pb-2 pb-lg-4 mb-3">
+                                        <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Account</h4>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/profile">
+                                            <i class="ai-user-check fs-5 opacity-60 me-2"></i>Profile
+                                        </a>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/invoices">
+                                            <i class="ai-wallet fs-5 opacity-60 me-2"></i>Invoice
+                                        </a>
+                                    </nav>
+                                @else
+                                    <nav class="nav flex-column pb-2 pb-lg-4 mb-1">
+                                        <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/campaigns">
+                                            <i class="ai-bulb fs-5 opacity-60 me-2"></i>Explore</a>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/contents">
+                                            <i class="ai-heart fs-5 opacity-60 me-2"></i>Content</a>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/analytics">
+                                            <i class="ai-activity fs-5 opacity-60 me-2"></i>Analytics</a>
+                                        {{-- <a class="nav-link fw-semibold py-2 px-0" href="account-favorites.html">
                                         <i class="ai-heart fs-5 opacity-60 me-2"></i>Favorites</a> --}}
-                                </nav>
-                                <nav class="nav flex-column pb-2 pb-lg-4 mb-3">
-                                    <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Account</h4>
-                                    <a class="nav-link fw-semibold py-2 px-0" href="/profile">
-                                        <i class="ai-user-check fs-5 opacity-60 me-2"></i>Profile
-                                    </a>
-                                    <a class="nav-link fw-semibold py-2 px-0" href="/wallet">
-                                        <i class="ai-wallet fs-5 opacity-60 me-2"></i>Wallet
-                                    </a>
-                                </nav>
+                                    </nav>
+                                    <nav class="nav flex-column pb-2 pb-lg-4 mb-3">
+                                        <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Account</h4>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/profile">
+                                            <i class="ai-user-check fs-5 opacity-60 me-2"></i>Profile
+                                        </a>
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/invoices">
+                                            <i class="ai-wallet fs-5 opacity-60 me-2"></i>Invoice
+                                        </a>
+                                    </nav>
+                                @endif
+
                                 <nav class="nav flex-column">
                                     <form action="/logout" method="POST">
                                         @csrf
@@ -305,32 +335,18 @@
             data-bs-target="#sidebarAccount"><i class="ai-menu me-2"></i>Account menu</button>
     </main>
     <!-- Footer-->
-    <footer class="footer bg-dark position-relative pb-4 pt-md-3 py-lg-4 py-xl-5">
+    <footer class="footer bg-dark position-relative pb-4 pt-md-2 py-lg-2 py-xl-3">
         <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100"
             style="background-color: rgba(255,255,255, .02);"></div>
         <div class="dark-mode container position-relative zindex-2 pt-2 pb-2">
 
-            <!-- Nav + Switcher-->
-            <div class="d-sm-flex align-items-end justify-content-between border-bottom mt-2 mt-sm-1 pt-2 pt-sm-2">
-                <!-- Nav-->
-                <nav class="d-flex mb-3 mb-sm-4"><a class="nav-link text-muted fs-sm fw-normal ps-0 pe-2 py-2 me-4"
-                        href="/support">Support</a><a class="nav-link text-muted fs-sm fw-normal ps-0 pe-2 py-2 me-4"
-                        href="/privacy">Privacy</a><a
-                        class="nav-link text-muted fs-sm fw-normal ps-0 pe-2 py-2 me-sm-4" href="/terms">Terms of
-                        Service</a></nav>
 
-            </div>
-            <!-- Logo + Socials + Cards-->
-            <div class="d-sm-flex align-items-center pt-4">
+
+            <div class="d-sm-flex align-items-center pt-3">
                 <div class="d-sm-flex align-items-center pe-sm-2"><a
                         class="navbar-brand d-inline-flex align-items-center me-sm-5 mb-4 mb-sm-0"
                         href="/"><span class="text-primary flex-shrink-0 me-2">
-                            <svg version="1.1" width="35" height="32" viewBox="0 0 36 33"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor"
-                                    d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z">
-                                </path>
-                            </svg></span><span class="text-nav">Around</span></a>
+                        </span><span class="text-nav">My Stars</span></a>
                     <div class="text-nowrap mb-4 mb-sm-0"><a
                             class="btn btn-icon btn-sm btn-secondary btn-telegram rounded-circle mx-2 ms-sm-0 me-sm-3"
                             href="#"><i class="ai-telegram"></i></a><a

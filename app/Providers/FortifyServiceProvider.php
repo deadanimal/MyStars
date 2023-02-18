@@ -46,8 +46,17 @@ class FortifyServiceProvider extends ServiceProvider
             return view('auth.login');
         });
 
-        Fortify::registerView(function () {
-            return view('auth.register');
+        Fortify::registerView(function (Request $request) {
+            if ($request->has('user_type')) {
+                if ($request->get('user_type') == 'brand') {
+                    $user_type = 'brand';    
+                } else {
+                    $user_type = 'creator';    
+                }
+            } else {
+                $user_type = 'none';
+            }
+            return view('auth.register', compact('user_type'));
         });
 
         Fortify::requestPasswordResetLinkView(function () {

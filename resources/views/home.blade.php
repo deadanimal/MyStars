@@ -61,22 +61,22 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-2 pb-3 mb-4"><span class='fw-normal'>Full servises</span> marketing agency
+                    <h1 class="display-2 pb-3 mb-4"><span class='fw-normal'>Attract customers with </span> content creation strategy
                     </h1>
                     <div class="row row-cols-3">
                         <div class="col"><i class="ai-bulb-alt d-block fs-1 text-dark mb-2 pb-1"></i>
-                            <p class="mb-0">Individual approach to the brand</p>
+                            <p class="mb-0">Individual and special approach to the brand</p>
                         </div>
                         <div class="col"><i class="ai-rocket d-block fs-2 text-dark mb-3"></i>
-                            <p class="mb-0">We guarantee the result after a month</p>
+                            <p class="mb-0">We guarantee the result after marketing launch</p>
                         </div>
                         <div class="col"><i class="ai-circle-check-filled d-block fs-3 text-dark mb-3"></i>
                             <p class="mb-0">Completing tasks exactly on time</p>
                         </div>
                     </div>
-                    <div class="d-sm-flex justify-content-center justify-content-lg-start pt-5 mt-lg-2"><a
-                            class="btn btn-lg btn-primary w-100 w-sm-auto mb-2 mb-sm-0 me-sm-1" href="#">Get
-                            in touch</a><a class="btn btn-lg btn-link" href="#">Our case studies<i
+                    <div class="d-sm-flex justify-content-center justify-content-lg-start pt-5 mt-lg-2">
+                        <a class="btn btn-lg btn-primary w-100 w-sm-auto mb-2 mb-sm-0 me-sm-1" href="/register?user_type=brand">Try it now</a>
+                        <a class="btn btn-lg btn-link" href="/case-studies">Our case studies<i
                                 class="ai-arrow-right ms-2"></i></a></div>
                 </div>
             </div>

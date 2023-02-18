@@ -176,15 +176,19 @@
                     </p>
                     <form class="needs-validation" novalidate action="register" method="POST">
                         @csrf
-                        <div class="mb-2 mb-md-3 row align-items-center">
-                            <label class="col-md-4 col-form-label" for="select-input">Account Type</label>
-                            <div class="col-md-8">
-                                <select class="form-select" id="select-input" name="user_type">
-                                    <option value="creator">Creator</option>
-                                    <option value="brand">Brand</option>
-                                </select>
+                        @if ($user_type == 'none')
+                            <div class="mb-2 mb-md-3 row align-items-center">
+                                <label class="col-md-4 col-form-label" for="select-input">Account Type</label>
+                                <div class="col-md-8">
+                                    <select class="form-select" id="select-input" name="user_type">
+                                        <option value="creator">Creator</option>
+                                        <option value="brand">Brand</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
+                        @else
+                            <input type="hidden" name="user_type" value="{{$user_type}}">
+                        @endif
                         <div class="row row-cols-1 row-cols-sm-2">
                             <div class="col mb-4">
                                 <input class="form-control form-control-lg" type="text" placeholder="Your name"

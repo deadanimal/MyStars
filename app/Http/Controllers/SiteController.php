@@ -40,6 +40,11 @@ class SiteController extends Controller
         
     } 
 
+    public function show_admin_dashboard(Request $request) {
+        $user = $request->user();
+        return view('dashboard');
+    }     
+
     public function show_profile(Request $request) {
         $user = $request->user();
         return view('profile', compact('user'));

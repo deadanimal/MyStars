@@ -22,12 +22,19 @@ class ProfileController extends Controller
 
         public function update_profile(Request $request) {
             $user = $request->user();
+            $user->update([
+                'name'=> $request->name,
+                'bio'=> $request->bio,
+            ]);
+            $user->save();
+            Alert::success('Success', 'Profile has been updated');
+            return back();
         }
 
         public function update_password(Request $request) {
             $user = $request->user();
             $user->update([
-                'password'=> Hash::make($request->new_password)
+                'password'=> Hash::make($request->password)
             ]);
             Alert::success('Success', 'Password has been updated');
             return back();            

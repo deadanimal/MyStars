@@ -46,7 +46,11 @@ class CampaignController extends Controller
             $campaign = Campaign::find($id);
             return view('creator.campaign_detail', compact('campaign'));
         }           
-    }    
+    } 
+    
+    public function show_create_campaign(Request $request) {
+        return view('brand.campaign_creation');
+    }
 
     public function create_campaign(Request $request) {
 
@@ -87,6 +91,20 @@ class CampaignController extends Controller
         Alert::success('Success', 'The campaign has been edited!');
 
         return back();
+    }
+
+    public function show_analytics(Request $request) {
+        $user = $request->user();
+        $user_type = $user->user_type;
+
+        if($user_type == 'admin') {
+            return view('admin.analytics');
+        } else if ($user_type == 'brand') {
+
+            return view('brand.analytics');
+        } else {
+            return view('creator.analytics');
+        }  
     }
 
 }

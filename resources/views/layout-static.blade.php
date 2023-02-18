@@ -129,17 +129,7 @@
             }
         }
     </style>
-    <script>
-        (function() {
-            window.onload = function() {
-                const preloader = document.querySelector('.page-loading');
-                preloader.classList.remove('active');
-                setTimeout(function() {
-                    preloader.remove();
-                }, 1500);
-            };
-        })();
-    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
@@ -172,30 +162,19 @@
 <!-- Body-->
 
 <body>
-    <!-- Page loading spinner-->
-    <div class="page-loading active">
-        <div class="page-loading-inner">
-            <div class="page-spinner"></div><span>Loading...</span>
-        </div>
-    </div>
+
     <!-- Page wrapper-->
     <main class="page-wrapper">
         <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
         <header class="navbar navbar-expand-lg fixed-top">
             <div class="container"><a class="navbar-brand pe-sm-3" href="/"><span
                         class="text-primary flex-shrink-0 me-2">
-                        <svg version="1.1" width="35" height="32" viewBox="0 0 36 33"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor"
-                                d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z">
-                            </path>
-                        </svg></span>Around</a>
+                        </span>My Stars</a>
                 <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
                     <input class="form-check-input" type="checkbox" id="theme-mode">
                     <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
                     <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
-                </div><a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="/dashboard"><i
-                        class="ai-cart fs-xl me-2 ms-n1"></i>Dashboard</a>
+                </div><a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="/dashboard"></i>Dashboard</a>
                 <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
                 {{-- <nav class="collapse navbar-collapse" id="navbarNav">
@@ -428,13 +407,7 @@
         <div class="container pt-md-2 pt-lg-3 pt-xl-4">
             <div class="row pb-5 pt-sm-2 mb-lg-2">
                 <div class="col-md-12 col-lg-3 pb-2 pb-lg-0 mb-4 mb-lg-0"><a class="navbar-brand py-0 mb-3 mb-lg-4"
-                        href="index.html"><span class="text-primary flex-shrink-0 me-2">
-                            <svg version="1.1" width="35" height="32" viewBox="0 0 36 33"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor"
-                                    d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z">
-                                </path>
-                            </svg></span><span class="text-nav">Around</span></a>
+                        href="/"><span class="text-nav">My Stars</span></a>
                     <p class="fs-sm pb-2 pb-lg-3 mb-3">Tellus non diam morbi quam vel venenatis proin sed. Dolor
                         elementum nunc dictum</p>
                     <div class="d-flex"><a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3"
@@ -446,9 +419,9 @@
                 </div>
                 <div class="col-sm-3 col-lg-2 offset-xl-1 mb-4 mb-sm-0">
                     <ul class="nav flex-column">
-                        <li><a class="nav-link py-1 px-0" href="/service">Service</a></li>
-                        <li><a class="nav-link py-1 px-0" href="/case-study">Case Study</a></li>
-                        <li><a class="nav-link py-1 px-0" href="/reward">Reward</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/services">Services</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/case-studies">Case studies</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/rewards">Rewards</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
