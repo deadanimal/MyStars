@@ -353,14 +353,18 @@
                         href="/"><span class="text-primary flex-shrink-0 me-2">
                         </span><span class="text-nav">My Stars</span></a>
                     <div class="text-nowrap mb-4 mb-sm-0"><a
-                            class="btn btn-icon btn-sm btn-secondary btn-telegram rounded-circle mx-2 ms-sm-0 me-sm-3"
-                            href="#"><i class="ai-telegram"></i></a><a
+                            class="btn btn-icon btn-sm btn-secondary btn-youtube rounded-circle mx-2 ms-sm-0 me-sm-3"
+                            href="#"><i class="ai-youtube"></i></a><a
                             class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle mx-2 ms-sm-0 me-sm-3"
                             href="#"><i class="ai-instagram"></i></a><a
                             class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle mx-2 ms-sm-0 me-sm-3"
                             href="#"><i class="ai-facebook"></i></a><a
-                            class="btn btn-icon btn-sm btn-secondary btn-pinterest rounded-circle mx-2 ms-sm-0 me-sm-3"
-                            href="#"><i class="ai-pinterest"></i></a></div>
+                            class="btn btn-icon btn-sm btn-secondary btn-tiktok rounded-circle mx-2 ms-sm-0 me-sm-3"
+                            href="#"><i class="ai-tiktok"></i></a><a
+                            class="btn btn-icon btn-sm btn-secondary btn-twitter rounded-circle mx-2 ms-sm-0 me-sm-3"
+                            href="#"><i class="ai-twitter"></i></a>
+
+                        </div>
                 </div> All rights reserved.
             </div>
         </div>

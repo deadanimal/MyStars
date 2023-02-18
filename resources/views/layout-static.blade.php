@@ -410,12 +410,19 @@
                         href="/"><span class="text-nav">My Stars</span></a>
                     <p class="fs-sm pb-2 pb-lg-3 mb-3">Tellus non diam morbi quam vel venenatis proin sed. Dolor
                         elementum nunc dictum</p>
-                    <div class="d-flex"><a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3"
-                            href="#"><i class="ai-facebook"></i></a><a
-                            class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle me-3"
-                            href="#"><i class="ai-instagram"></i></a><a
-                            class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="#"><i
-                                class="ai-linkedin"></i></a></div>
+                    <div class="d-flex">
+                                <a
+                                class="btn btn-icon btn-sm btn-secondary btn-youtube rounded-circle mx-2 ms-sm-0 me-sm-3"
+                                href="#"><i class="ai-youtube"></i></a><a
+                                class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle mx-2 ms-sm-0 me-sm-3"
+                                href="#"><i class="ai-instagram"></i></a><a
+                                class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle mx-2 ms-sm-0 me-sm-3"
+                                href="#"><i class="ai-facebook"></i></a><a
+                                class="btn btn-icon btn-sm btn-secondary btn-tiktok rounded-circle mx-2 ms-sm-0 me-sm-3"
+                                href="#"><i class="ai-tiktok"></i></a><a
+                                class="btn btn-icon btn-sm btn-secondary btn-twitter rounded-circle mx-2 ms-sm-0 me-sm-3"
+                                href="#"><i class="ai-twitter"></i></a>                                
+                            </div>
                 </div>
                 <div class="col-sm-3 col-lg-2 offset-xl-1 mb-4 mb-sm-0">
                     <ul class="nav flex-column">
