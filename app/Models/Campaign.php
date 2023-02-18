@@ -13,7 +13,7 @@ class Campaign extends Model
         'title',        
         'status',
         'platform',
-        'link_to_content',
+        'reference_link',
         'caption',
         'brand_introduction',
         'creative_direction',

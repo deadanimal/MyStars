@@ -8,40 +8,48 @@
         <section class="card border-0 py-1 p-md-2 p-xl-3 p-xxl-4 mb-4">
             <div class="card-body">
 
+                <form action="/campaigns" method="POST">
+                    @csrf
+
                 <div class="mb-3">
-                    <label for="text-input" class="form-label">Text</label>
-                    <input class="form-control" type="text" id="text-input" value="Artisanal kale">
+                    <label for="text-input" class="form-label">Title</label>
+                    <input class="form-control" type="text" id="text-input" name="title" placeholder="Campaign Title">
                 </div>
 
                 <div class="mb-3">
-                    <label for="select-input" class="form-label">Select</label>
-                    <select class="form-select" id="select-input">
-                        <option>Choose option...</option>
-                        <option>Option item 1</option>
-                        <option>Option item 2</option>
-                        <option>Option item 3</option>
+                    <label for="select-input" class="form-label">Platform</label>
+                    <select class="form-select" id="select-input" name="platform">
+                        <option value="tiktok" selected>Tiktok</option>
+                        <option value="youtube">Youtube</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="facebook">Facebook</option>
                     </select>
                 </div>
 
                 <div class="mb-3">
-                    <label for="text-input" class="form-label">Text</label>
-                    <input class="form-control" type="text" id="text-input" value="Artisanal kale">
+                    <label for="text-input" class="form-label">URL to Reference Media</label>
+                    <input class="form-control" type="text" id="text-input" name="reference_link" placeholder="https://....">
                 </div>
 
                 <div class="mb-3">
-                    <label for="textarea-input" class="form-label">Textarea</label>
-                    <textarea class="form-control" id="textarea-input" rows="5">Hello World!</textarea>
+                    <label for="textarea-input" class="form-label">Caption</label>
+                    <textarea class="form-control" id="textarea-input" rows="5" name="caption" placeholder="Please put the caption that you'd like creators to include"></textarea>
                 </div>
 
                 <div class="mb-3">
-                    <label for="textarea-input" class="form-label">Textarea</label>
-                    <textarea class="form-control" id="textarea-input" rows="5">Hello World!</textarea>
+                    <label for="textarea-input" class="form-label">Brand Introduction</label>
+                    <textarea class="form-control" id="textarea-input" rows="5" name="brand_introduction" placeholder="Please put as much as you can"></textarea>
                 </div>
 
                 <div class="mb-3">
-                    <label for="textarea-input" class="form-label">Textarea</label>
-                    <textarea class="form-control" id="textarea-input" rows="5">Hello World!</textarea>
+                    <label for="textarea-input" class="form-label">Campaign Creative Direction</label>
+                    <textarea class="form-control" id="textarea-input" rows="5" name="creative_direction" placeholder="Please put as much as you can"></textarea>
                 </div>
+
+                <button class="btn btn-primary" type="submit">Create a Campaign</button>
+
+                </form>
 
             </div>
         </section>

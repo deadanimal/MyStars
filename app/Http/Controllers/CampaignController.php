@@ -61,7 +61,7 @@ class CampaignController extends Controller
             'reference_link' => $request->reference_link,
             'caption' => $request->caption,
             'brand_introduction' => $request->brand_introduction,
-            'campaign_direction' => $request->campaign_direction,
+            'creative_direction' => $request->creative_direction,
             'user_id' => $request->user()->id,
         ]);
 

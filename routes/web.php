@@ -69,5 +69,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/admin', [SiteController::class, 'show_admin_dashboard']);
     Route::post('earnings', [WalletController::class, 'approve_earning']);
+
+    Route::post('/guides', [SiteController::class, 'create_guide']);
+    Route::put('/guides/{guide_id}', [SiteController::class, 'update_guide']);
     
 });
