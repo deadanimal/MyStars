@@ -18,6 +18,12 @@ Route::get('/support', [SiteController::class, 'show_support']);
 Route::get('/privacy', [SiteController::class, 'show_privacy']);
 Route::get('/terms', [SiteController::class, 'show_terms']);
 Route::get('/afeezaziz', [SiteController::class, 'show_afeezaziz']);
+Route::get('/rewards', [SiteController::class, 'show_rewards']);
+Route::get('/services', [SiteController::class, 'show_services']);
+Route::get('/case-studies', [SiteController::class, 'show_case_studies']);
+
+Route::get('/guides', [SiteController::class, 'show_guides']);
+Route::get('/guides/{guide_id}', [SiteController::class, 'show_guide']);
 
 Route::get('/@{username}', [ProfileController::class, 'show_username']);
 

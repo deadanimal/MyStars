@@ -234,6 +234,8 @@
                                     class="ai-wallet fs-base opacity-70 me-2 mt-n1"></i>Wallet</a>
                         @endif
                         <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/guides"><i
+                            class="ai-help fs-base opacity-70 me-2 mt-n1"></i>Guide</a>                        
                         <form action="/logout" method="POST">
                             @csrf
                             <button class="dropdown-item" type="submit"><i
@@ -304,13 +306,16 @@
                                         <a class="nav-link fw-semibold py-2 px-0" href="/profile">
                                             <i class="ai-user-check fs-5 opacity-60 me-2"></i>Profile
                                         </a>
-                                        <a class="nav-link fw-semibold py-2 px-0" href="/invoices">
-                                            <i class="ai-wallet fs-5 opacity-60 me-2"></i>Invoice
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/wallet">
+                                            <i class="ai-wallet fs-5 opacity-60 me-2"></i>Wallet
                                         </a>
                                     </nav>
                                 @endif
 
                                 <nav class="nav flex-column">
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/guides">
+                                        <i class="ai-help fs-5 opacity-60 me-2"></i>Guide
+                                    </a>                                    
                                     <form action="/logout" method="POST">
                                         @csrf
                                         <button class="nav-link fw-semibold py-2 px-0" type="submit">

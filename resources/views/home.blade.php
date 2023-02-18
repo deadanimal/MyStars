@@ -36,7 +36,7 @@
                                             src="assets/img/landing/marketing-agency/hero/avatar.jpg" width="35"
                                             alt="Avatar">
                                         <div class="ignore-dark-mode fs-xs ps-2"><span
-                                                class="text-nav fw-bold me-1">Lonoi@1</span><span class="text-muted">12
+                                                class="text-nav fw-bold me-1">mystars</span><span class="text-muted">10
                                                 min</span></div>
                                     </div>
                                 </div>
@@ -61,7 +61,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-2 pb-3 mb-4"><span class='fw-normal'>Attract customers with </span> content creation strategy
+                    <h1 class="display-2 pb-3 mb-4"><span class='fw-normal'>Attract customers with </span> content creation
+                        strategy
                     </h1>
                     <div class="row row-cols-3">
                         <div class="col"><i class="ai-bulb-alt d-block fs-1 text-dark mb-2 pb-1"></i>
@@ -75,9 +76,11 @@
                         </div>
                     </div>
                     <div class="d-sm-flex justify-content-center justify-content-lg-start pt-5 mt-lg-2">
-                        <a class="btn btn-lg btn-primary w-100 w-sm-auto mb-2 mb-sm-0 me-sm-1" href="/register?user_type=brand">Try it now</a>
+                        <a class="btn btn-lg btn-primary w-100 w-sm-auto mb-2 mb-sm-0 me-sm-1"
+                            href="/register?user_type=brand">Try it now</a>
                         <a class="btn btn-lg btn-link" href="/case-studies">Our case studies<i
-                                class="ai-arrow-right ms-2"></i></a></div>
+                                class="ai-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -565,7 +568,7 @@
         </div>
     </section>
     <!-- Case studies-->
-    <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
+    <section class="container py-5 mt-lg-3 mt-xl-4 mt-xxl-5">
         <div class="row align-items-center pt-md-4 mt-2 mt-sm-3">
             <div class="col-md-6 position-relative pb-3 pb-md-0 mb-2 mb-sm-3 mb-md-0">
                 <div class="d-none d-xxl-block position-absolute"
@@ -706,173 +709,7 @@
             </div>
         </div>
     </section>
-    <!-- Team-->
-    <section class="position-relative pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
-        <div class="position-absolute w-100 start-0 bottom-0 overflow-hidden">
-            <div class="text-primary opacity-10" style="width: 3840px; height: 250px;">
-                <svg width="3840" height="250" viewBox="0 0 3840 250" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M3840,32.1V250H0V32.1c72.5,0,112.1-17.4,271.6,5.5c199.3,28.5,206,34.7,378.4,29c172.4-5.7,287.8-34.5,418.9-34.5S1317,55.2,1430,48.4c113-6.8,176.5-37.9,248-45.9c15.4-1.7,33-2.6,51.8-2.6c68.4,0.1,166.7,14,223.1,23.4c84.8,6.6,128.1,27.8,288.5,43.5c199.8,19.5,156.2,5.5,328.6-0.2c172.4-5.7,287.8-34.5,418.9-34.5c131.1,0,248.1,23.1,361.1,16.3c113-6.8,176.5-37.9,248-45.9c15.4-1.7,33-2.6,51.8-2.6C3718.2,0,3800.9,11.2,3840,32.1z">
-                    </path>
-                </svg>
-            </div>
-        </div>
-        <div class="container position-relative zindex-2 pb-3 pt-2 pt-sm-3 pt-md-4 pt-lg-5 mt-md-3 mt-xxl-2 mb-3 mb-lg-4">
-            <div class="text-center mx-auto" style="max-width: 460px;">
-                <h2 class="h1">We are all passionate about what we do</h2>
-                <svg class="d-inline-block heartbeat text-danger" width="52" height="38" viewBox="0 0 52 38"
-                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M52,6.3c0.8-12.6-18.6-4-24.8,1.6c-0.4,0.4-1.1,0.4-1.5,0.1C9.9-2.7-2,1.5,0.3,10c1.5,5.6,16.2,20.4,25.5,27.7c0.4,0.3,1,0.3,1.4,0C36.7,29.5,51.2,19.1,52,6.3z">
-                    </path>
-                </svg>
-            </div>
-        </div>
-        <div class="container-start pe-0">
-            <div class="swiper"
-                data-swiper-options="{
-        &quot;slidesPerView&quot;: &quot;auto&quot;,
-        &quot;spaceBetween&quot;: 24,
-        &quot;loop&quot;: true,
-        &quot;navigation&quot;: {
-          &quot;prevEl&quot;: &quot;#prev-feature&quot;,
-          &quot;nextEl&quot;: &quot;#next-feature&quot;
-        }
-      }">
-                <div class="swiper-wrapper">
-                    <!-- Item-->
-                    <div class="swiper-slide w-auto">
-                        <div class="card-hover text-center" style="max-width: 306px;"><img class="d-block rounded-5 mb-4"
-                                src="assets/img/landing/creative-agency/team/02.jpg" alt="Image">
-                            <h3 class="h5 mb-1">Alisa Black</h3>
-                            <p class="text-muted mb-2">Head of marketing</p>
-                            <div class="d-none d-lg-flex nav justify-content-center opacity-0"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-instagram"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#"><i
-                                        class="ai-linkedin"></i></a></div>
-                            <div class="d-lg-none nav justify-content-center"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-instagram"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#"><i
-                                        class="ai-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                    <!-- Item-->
-                    <div class="swiper-slide w-auto">
-                        <div class="card-hover text-center" style="max-width: 306px;"><img class="d-block rounded-5 mb-4"
-                                src="assets/img/landing/creative-agency/team/01.jpg" alt="Image">
-                            <h3 class="h5 mb-1">Guy Hawkins</h3>
-                            <p class="text-muted mb-2">President of Sales</p>
-                            <div class="d-none d-lg-flex nav justify-content-center opacity-0"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-twitter"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#"><i
-                                        class="ai-instagram"></i></a></div>
-                            <div class="d-lg-none nav justify-content-center"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-twitter"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#"><i
-                                        class="ai-instagram"></i></a></div>
-                        </div>
-                    </div>
-                    <!-- Item-->
-                    <div class="swiper-slide w-auto">
-                        <div class="card-hover text-center" style="max-width: 306px;"><img class="d-block rounded-5 mb-4"
-                                src="assets/img/landing/creative-agency/team/06.jpg" alt="Image">
-                            <h3 class="h5 mb-1">Robert Fox</h3>
-                            <p class="text-muted mb-2">Web Designer</p>
-                            <div class="d-none d-lg-flex nav justify-content-center opacity-0"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-behance"></i></a><a class="nav-link btn btn-icon btn-sm fs-sm fw-normal"
-                                    href="#"><i class="ai-dribbble"></i></a></div>
-                            <div class="d-lg-none nav justify-content-center"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-behance"></i></a><a class="nav-link btn btn-icon btn-sm fs-sm fw-normal"
-                                    href="#"><i class="ai-dribbble"></i></a></div>
-                        </div>
-                    </div>
-                    <!-- Item-->
-                    <div class="swiper-slide w-auto">
-                        <div class="card-hover text-center" style="max-width: 306px;"><img class="d-block rounded-5 mb-4"
-                                src="assets/img/landing/creative-agency/team/04.jpg" alt="Image">
-                            <h3 class="h5 mb-1">Jane Cooper</h3>
-                            <p class="text-muted mb-2">Marketing Coordinator</p>
-                            <div class="d-none d-lg-flex nav justify-content-center opacity-0"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-instagram"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#"><i
-                                        class="ai-linkedin"></i></a></div>
-                            <div class="d-lg-none nav justify-content-center"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-instagram"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#"><i
-                                        class="ai-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                    <!-- Item-->
-                    <div class="swiper-slide w-auto">
-                        <div class="card-hover text-center" style="max-width: 306px;"><img class="d-block rounded-5 mb-4"
-                                src="assets/img/landing/creative-agency/team/03.jpg" alt="Image">
-                            <h3 class="h5 mb-1">Cody Fisher</h3>
-                            <p class="text-muted mb-2">SMM Specialist</p>
-                            <div class="d-none d-lg-flex nav justify-content-center opacity-0"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-twitter"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#"><i
-                                        class="ai-instagram"></i></a></div>
-                            <div class="d-lg-none nav justify-content-center"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-twitter"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal" href="#"><i
-                                        class="ai-instagram"></i></a></div>
-                        </div>
-                    </div>
-                    <!-- Item-->
-                    <div class="swiper-slide w-auto">
-                        <div class="card-hover text-center" style="max-width: 306px;"><img class="d-block rounded-5 mb-4"
-                                src="assets/img/landing/creative-agency/team/05.jpg" alt="Image">
-                            <h3 class="h5 mb-1">Jacob Jones</h3>
-                            <p class="text-muted mb-2">Web Designer</p>
-                            <div class="d-none d-lg-flex nav justify-content-center opacity-0"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-behance"></i></a><a class="nav-link btn btn-icon btn-sm fs-sm fw-normal"
-                                    href="#"><i class="ai-dribbble"></i></a></div>
-                            <div class="d-lg-none nav justify-content-center"><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-facebook"></i></a><a
-                                    class="nav-link btn btn-icon btn-sm fs-sm fw-normal me-1" href="#"><i
-                                        class="ai-behance"></i></a><a class="nav-link btn btn-icon btn-sm fs-sm fw-normal"
-                                    href="#"><i class="ai-dribbble"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- Resources (Blog)-->
     <section class="bg-faded-primary py-5">
         <div class="container py-sm-2 pt-md-3 py-lg-2 py-xl-4 py-xxl-5">
@@ -964,7 +801,7 @@
         <div style="height: 380px;"></div>
     </section>
     <!-- Contact form-->
-    <section class="container dark-mode" style="margin-top: -380px;">
+    <section class="container dark-mode" style="margin-top: -380px;" id="registration">
         <div class="card border-0 bg-primary position-relative py-lg-4 py-xl-5">
             <!-- Decorative shapes-->
             <svg class="position-absolute end-0 mt-n2" width="242" height="331" viewBox="0 0 242 331"
@@ -986,56 +823,33 @@
                     fill="#121519" fill-opacity="0.07"></path>
             </svg>
             <div class="card-body position-relative zindex-2 py-5">
-                <form class="mx-auto" style="max-width: 800px;">
-                    <h2 class="h1 card-title text-center pb-4">Get a free consultation</h2>
+                <form class="mx-auto" action="/register" method="POST" style="max-width: 800px;">
+                    @csrf
+                    <h2 class="h1 card-title text-center pb-4">Register for My Stars</h2>
                     <div class="row g-4">
                         <div class="col-sm-6">
                             <label class="form-label fs-base" for="name">Name</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="Your name" required
-                                id="name">
+                            <input class="form-control form-control-lg" type="text" name="name"
+                                placeholder="Your name" required id="name">
                         </div>
                         <div class="col-sm-6">
-                            <label class="form-label fs-base" for="company">Company</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="Your company name"
-                                id="company">
-                        </div>
-                        <div class="col-sm-6">
-                            <label class="form-label fs-base" for="email">Email</label>
+                            <label class="form-label fs-base" for="company">Email</label>
                             <input class="form-control form-control-lg" type="email" placeholder="Email address"
                                 required id="email">
                         </div>
                         <div class="col-sm-6">
-                            <label class="form-label fs-base" for="phone">Phone</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="Phone number"
-                                id="phone">
+                            <label class="form-label fs-base" for="email">Password</label>
+                            <input class="form-control form-control-lg" type="password" placeholder="Password"
+                                name="password" required>
                         </div>
-                        <div class="col-sm-12">
-                            <label class="form-label fs-base" for="message">How can we help?</label>
-                            <textarea class="form-control form-control-lg" rows="6" placeholder="Enter your message here..." required
-                                id="message"></textarea>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="seo">
-                                <label class="form-check-label fs-base" for="seo">SEO Website Audit</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="email-marketing" checked>
-                                <label class="form-check-label fs-base" for="email-marketing">Email
-                                    Marketing</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="social">
-                                <label class="form-check-label fs-base" for="social">Social Networks</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="content-marketing">
-                                <label class="form-check-label fs-base" for="content-marketing">Content
-                                    Marketing</label>
-                            </div>
+                        <div class="col-sm-6">
+                            <label class="form-label fs-base" for="phone">Confirm Password</label>
+                            <input class="form-control form-control-lg" type="password" placeholder="Confirm password"
+                                name="password_confirmation" required>
                         </div>
                         <div class="col-sm-12 text-center pt-4">
-                            <button class="btn btn-lg btn-light" type="submit">Send a request</button>
+                            <button class="btn btn-lg btn-light" name="user_type" value="brand" type="submit">Register as Brand</button>
+                            <button class="btn btn-lg btn-primary ml-3" name="user_type" value="creator" type="submit">Register as Creator</button>
                         </div>
                     </div>
                 </form>

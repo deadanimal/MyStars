@@ -424,14 +424,22 @@
                         <li><a class="nav-link py-1 px-0" href="/rewards">Rewards</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
+                <div class="col-sm-3 col-lg-2 offset-xl-1 mb-4 mb-sm-0">
                     <ul class="nav flex-column">
                         <li><a class="nav-link py-1 px-0" href="/support">Support</a></li>
                         <li><a class="nav-link py-1 px-0" href="/terms">Terms</a></li>
                         <li><a class="nav-link py-1 px-0" href="/privacy">Privacy</a></li>
                     </ul>
                 </div>
+                <div class="col-sm-3 col-lg-2 offset-xl-1 mb-4 mb-sm-0">
+                    <ul class="nav flex-column">
+                        <li><a class="nav-link py-1 px-0" href="/guides/1">Create a campaign</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/guides/2">Create a content</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/guides/3">Content ideas?</a></li>
+                    </ul>
+                </div>                
                 <div class="col-sm-5 col-lg-4 col-xl-3 offset-lg-1">
+                    
                     {{-- <h3 class="h6 mb-2">Stay up to date</h3>
                     <p class="fs-sm">Subscribe to our news and case studies</p>
                     <div class="input-group input-group-sm">
