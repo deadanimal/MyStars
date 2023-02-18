@@ -152,7 +152,7 @@
     <main class="page-wrapper">
       <!-- Page content-->
       <div class="d-flex flex-column align-items-center position-relative h-100 px-3 pt-5">
-        <!-- Home button--><a class="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 zindex-2 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="index.html" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i class="ai-home"></i></a>
+        <!-- Home button--><a class="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 zindex-2 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i class="ai-home"></i></a>
         <!-- Content-->
         <div class="mt-auto" style="max-width: 700px;">
           <h1 class="pt-3 pb-2 pb-lg-3">Forgot your password?</h1>
