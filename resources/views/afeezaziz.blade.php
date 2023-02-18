@@ -167,8 +167,10 @@
                 <div class="row align-items-center justify-content-center pt-3 pt-sm-4 mt-sm-3">
                     <div class="col-sm-9 col-md-8 col-lg-7 offset-lg-1 order-md-2 pb-3 pb-sm-0 mt-md-n5 mb-4 mb-sm-5">
                         <div class="ps-md-4 ps-lg-0 mt-md-n4 mt-lg-n5">
-                            <h1 class="display-5 mb-lg-4">Hey, I'm <span class='text-dark fw-bolder'>Afeez Aziz</span>.<br>I love artificial intelligence, crypto &amp; social media</h1>
-                            <p class="fs-lg">I educate the public on how to use tools for AI, crypto, and social media to make the world a better place. </p>
+                            <h1 class="display-5 mb-lg-4">Hey, I'm <span class='text-dark fw-bolder'>Afeez
+                                    Aziz</span>.<br>I love artificial intelligence, crypto &amp; social media</h1>
+                            <p class="fs-lg">I educate the public on how to use tools for AI, crypto, and social media
+                                to make the world a better place. </p>
                             <div style="max-width: 24rem;">
                                 <div class="d-table text-dark mx-auto">
                                     <div class="ms-n4">
@@ -208,7 +210,7 @@
                                         <h3 class="h5 fw-bold mb-4">Monthly</h3>
                                         <button class="btn btn-lg btn-primary px-4" type="button"><span
                                                 class="text-light px-sm-2">$14.<sup>99</sup> / month</span></button>
-                                    </div>                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -368,8 +370,8 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
+
+
                         <!-- Item-->
                         <div class="swiper-slide h-auto">
                             <div class="card h-100 border-0 rounded-4 pb-3">
@@ -567,7 +569,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="container position-relative py-5 my-lg-3 my-xl-4 my-xxl-5">
             <div class="position-absolute top-0 end-0 d-none d-md-block"
                 style="animation: rotate-cw 70s linear infinite; margin-top: -190px; margin-right: 100px;">
@@ -579,15 +581,86 @@
                 </svg>
             </div>
             <div class="pb-3 pt-2 py-sm-3 my-md-3 my-lg-4" style="max-width: 40rem;">
-                <h2 class="h1">Always stay up to date</h2>
+
+                <!-- Begin Mailchimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet"
+                    type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup {
+                        background: #fff;
+                        clear: left;
+                        font: 14px Helvetica, Arial, sans-serif;
+                        width: 600px;
+                    }
+
+                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+ We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                    <form
+                        action="https://stars.us21.list-manage.com/subscribe/post?u=763b153452490e714d20ad796&amp;id=6571b25868&amp;f_id=000af9e1f0"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                        class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <h2>Subscribe</h2>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email"
+                                    id="mce-EMAIL" required>
+                                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                            </div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                    name="b_763b153452490e714d20ad796_6571b25868" tabindex="-1" value="">
+                            </div>
+                            <div class="optionalParent">
+                                <div class="clear foot">
+                                    <input type="submit" value="Subscribe" name="subscribe"
+                                        id="mc-embedded-subscribe" class="button">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>
+                    (function($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0] = 'EMAIL';
+                        ftypes[0] = 'email';
+                        fnames[1] = 'FNAME';
+                        ftypes[1] = 'text';
+                        fnames[2] = 'LNAME';
+                        ftypes[2] = 'text';
+                        fnames[3] = 'ADDRESS';
+                        ftypes[3] = 'address';
+                        fnames[4] = 'PHONE';
+                        ftypes[4] = 'phone';
+                        fnames[5] = 'BIRTHDAY';
+                        ftypes[5] = 'birthday';
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);
+                </script>
+                <!--End mc_embed_signup-->
+
+
+                {{-- <h2 class="h1">Always stay up to date</h2>
                 <p class="fs-lg pb-2 pb-sm-3 pb-lg-4">Be the first to hear the latest news and updates!</p>
                 <div class="input-group input-group-lg">
                     <input class="form-control" type="email" placeholder="Email address">
                     <button class="btn btn-primary" type="button">Subscribe</button>
-                </div>
+                </div> --}}
             </div>
         </section>
-        
+
         <section class="ignore-dark-mode position-relative overflow-hidden">
             <div class="position-absolute top-0 start-0 w-100 h-100" data-aos="zoom-in" data-aos-duration="600"
                 data-aos-offset="300" data-disable-parallax-down="md">
