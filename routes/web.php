@@ -5,12 +5,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\CampaignController;
 use App\Http\Controllers\ContentController;
+use App\Http\Controllers\EarningController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\WalletController;
 
 Route::get('/', [SiteController::class, 'show_home']);
 
 Route::stripeWebhooks('stripe-webhook');
 
+Route::get('/support', [SiteController::class, 'show_support']);
 Route::get('/privacy', [SiteController::class, 'show_privacy']);
 Route::get('/terms', [SiteController::class, 'show_terms']);
 Route::get('/afeezaziz', [SiteController::class, 'show_afeezaziz']);
@@ -37,6 +40,14 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/contents', [ContentController::class, 'show_contents']);
     Route::get('/contents/{content_id}', [ContentController::class, 'show_content']);
-    Route::put('/contents/{content_id}', [ContentController::class, 'update_content']);    
+    Route::put('/contents/{content_id}', [ContentController::class, 'update_content']);   
+    
+    Route::get('/wallet', [WalletController::class, 'show_wallet']);
+    Route::get('/wallet/earnings', [WalletController::class, 'show_earnings']);
+
+    Route::put('/wallet', [WalletController::class, 'update_wallet']); 
+    Route::post('/wallet/cashouts', [WalletController::class, 'to_cashout']);
+    Route::post('/wallet/earnings', [WalletController::class, 'approve_earning']);
+    
 
 });

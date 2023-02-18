@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>My Stars </title>
-    
+
     <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
     <meta name="keywords"
         content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, dark mode, html5, css3, javascript, gallery, slider, touch, creative">
     <meta name="author" content="My Stars">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#080032">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="white">
-    
+
     <script>
         let mode = window.localStorage.getItem('mode'),
             root = document.getElementsByTagName('html')[0];
@@ -147,6 +147,27 @@
     <link rel="stylesheet" media="screen" href="/assets/vendor/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" media="screen" href="/assets/vendor/aos/dist/aos.css" />
     <link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "https://stars.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.async = true;
+            g.src = '//cdn.matomo.cloud/stars.matomo.cloud/matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
 </head>
 <!-- Body-->
 
@@ -173,11 +194,11 @@
                     <input class="form-check-input" type="checkbox" id="theme-mode">
                     <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
                     <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
-                </div><a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex"
-                    href="/dashboard"><i class="ai-cart fs-xl me-2 ms-n1"></i>Dashboard</a>
+                </div><a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="/dashboard"><i
+                        class="ai-cart fs-xl me-2 ms-n1"></i>Dashboard</a>
                 <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-                <nav class="collapse navbar-collapse" id="navbarNav">
+                {{-- <nav class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
                         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#"
                                 data-bs-toggle="dropdown" aria-expanded="false">Landings</a>
@@ -396,7 +417,7 @@
                     <div class="d-sm-none p-3 mt-n3"><a class="btn btn-primary w-100  mb-1"
                             href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/"
                             target="_blank" rel="noopener"><i class="ai-cart fs-xl me-2 ms-n1"></i>Dashboard</a></div>
-                </nav>
+                </nav> --}}
             </div>
         </header>
 
@@ -416,8 +437,7 @@
                             </svg></span><span class="text-nav">Around</span></a>
                     <p class="fs-sm pb-2 pb-lg-3 mb-3">Tellus non diam morbi quam vel venenatis proin sed. Dolor
                         elementum nunc dictum</p>
-                    <div class="d-flex"><a
-                            class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3"
+                    <div class="d-flex"><a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3"
                             href="#"><i class="ai-facebook"></i></a><a
                             class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle me-3"
                             href="#"><i class="ai-instagram"></i></a><a
@@ -426,32 +446,28 @@
                 </div>
                 <div class="col-sm-3 col-lg-2 offset-xl-1 mb-4 mb-sm-0">
                     <ul class="nav flex-column">
-                        <li><a class="nav-link py-1 px-0" href="#">Services</a></li>
-                        <li><a class="nav-link py-1 px-0" href="#">Reviews</a></li>
-                        <li><a class="nav-link py-1 px-0" href="#">Case studies</a></li>
-                        <li><a class="nav-link py-1 px-0" href="#">Privacy policy</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/service">Service</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/case-study">Case Study</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/reward">Reward</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
                     <ul class="nav flex-column">
-                        <li><a class="nav-link py-1 px-0" href="mailto:contact@example.com">contact@example.com</a>
-                        </li>
-                        <li><a class="nav-link py-1 px-0" href="tel:+15262200459">+1 526 220 0459</a></li>
-                        <li><a class="nav-link py-1 px-0" href="tel:+15262200444">+1 526 220 0444</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/support">Support</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/terms">Terms</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/privacy">Privacy</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-5 col-lg-4 col-xl-3 offset-lg-1">
-                    <h3 class="h6 mb-2">Stay up to date</h3>
+                    {{-- <h3 class="h6 mb-2">Stay up to date</h3>
                     <p class="fs-sm">Subscribe to our news and case studies</p>
                     <div class="input-group input-group-sm">
                         <input class="form-control" type="text" placeholder="Your email">
                         <button class="btn btn-primary" type="button">Subscribe</button>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
-            <p class="fs-sm mb-0"><span class="opacity-70">&copy; All rights reserved. Made by </span><a
-                    class="nav-link d-inline fw-normal p-0" href="https://createx.studio/" target="_blank"
-                    rel="noopener">Createx Studio</a></p>
+            <p class="fs-sm mb-0"><span class="opacity-70">&copy; All rights reserved.</p>
         </div>
     </footer>
     <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>

@@ -20,7 +20,7 @@ class CampaignController extends Controller
             $campaings = Campaign::all();
             return view('admin.campaign_list', compact('campaigns'));
         } else if ($user_type == 'brand') {
-            $campaings = Campaign::where('user_id', $user_id)->get();
+            $campaigns = Campaign::where('user_id', $user_id)->get();
             return view('brand.campaign_list', compact('campaigns'));
         } else {
             $campaings = Campaign::all();

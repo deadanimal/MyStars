@@ -14,6 +14,10 @@ class SiteController extends Controller
         return view('home');
     }
 
+    public function show_support(Request $request) {
+        return view('support');
+    }    
+
     public function show_privacy(Request $request) {
         return view('privacy');
     }
@@ -28,7 +32,12 @@ class SiteController extends Controller
 
     public function show_dashboard(Request $request) {
         $user = $request->user();
-        return view('dashboard', compact('user'));
+        if ($user->user_type == 'admin') {
+            return redirect('/admin');
+        } else {
+            return redirect('/campaigns');
+        }
+        
     } 
 
     public function show_profile(Request $request) {

@@ -1,5 +1,5 @@
-@extends('layout')
+@extends('layout-static')
 
 @section('content')
-privacy
+asd
 @endsection

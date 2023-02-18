@@ -21,6 +21,8 @@ class CreateNewUser implements CreatesNewUsers
     {
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
+            'terms' => ['required'],
+            'user_type' => ['required', 'string', 'max:255'],
             'email' => [
                 'required',
                 'string',
@@ -31,8 +33,15 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
         ])->validate();
 
+        if($input['user_type'] == 'brand') {
+            $user_type = 'brand';
+        } else {
+            $user_type = 'creator';
+        }
+
         return User::create([
             'name' => $input['name'],
+            'user_type' => $user_type,
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
         ]);

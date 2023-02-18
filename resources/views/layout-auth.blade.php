@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>My Stars</title>
-    <!-- SEO Meta Tags-->
+
     <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
     <meta name="keywords"
         content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, dark mode, html5, css3, javascript, gallery, slider, touch, creative">
     <meta name="author" content="Createx Studio">
-    <!-- Viewport-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon and Touch Icons-->
+
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#080032">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="white">
-    <!-- Theme mode-->
+
     <script>
         let mode = window.localStorage.getItem('mode'),
             root = document.getElementsByTagName('html')[0];
@@ -130,7 +130,7 @@
             }
         }
     </style>
-    <!-- Page loading scripts-->
+
     <script>
         (function() {
             window.onload = function() {
@@ -142,7 +142,7 @@
             };
         })();
     </script>
-    <!-- Import Google Font-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
@@ -150,6 +150,27 @@
     <!-- Vendor styles-->
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="/assets/css/theme.min.css">
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "https://stars.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.async = true;
+            g.src = '//cdn.matomo.cloud/stars.matomo.cloud/matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
 </head>
 <!-- Body-->
 
@@ -185,20 +206,29 @@
                             width="48" alt="Profile Picture">
                     </a>
                     <div class="dropdown-menu dropdown-menu-end my-1">
-                        <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Account</h6><a
-                            class="dropdown-item" href="account-overview.html"><i
-                                class="ai-user-check fs-lg opacity-70 me-2"></i>Overview</a><a class="dropdown-item"
-                            href="account-settings.html"><i class="ai-settings fs-lg opacity-70 me-2"></i>Settings</a><a
-                            class="dropdown-item" href="account-billing.html"><i
-                                class="ai-wallet fs-base opacity-70 me-2 mt-n1"></i>Billing</a>
+
+                        <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Dashboard</h6>
+                        <a class="dropdown-item" href="/campaigns">
+                            <i class="ai-bulb fs-lg opacity-70 me-2"></i>Explore
+                        </a>
+                        <a class="dropdown-item" href="/contents">
+                            <i class="ai-heart fs-lg opacity-70 me-2"></i>Content
+                        </a>
+                        <a class="dropdown-item" href="/wallet/earnings">
+                            <i class="ai-activity fs-lg opacity-70 me-2"></i>Earnings
+                        </a>
+                        {{-- <a class="dropdown-item d-flex align-items-center" href="/tickets">
+                            <i class="ai-messages fs-lg opacity-70 me-2"></i>Chat
+                        </a> --}}
+
                         <div class="dropdown-divider"></div>
-                        <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Dashboard</h6><a
-                            class="dropdown-item" href="account-orders.html"><i
-                                class="ai-cart fs-lg opacity-70 me-2"></i>Orders</a><a class="dropdown-item"
-                            href="account-earnings.html"><i class="ai-activity fs-lg opacity-70 me-2"></i>Earnings</a><a
-                            class="dropdown-item d-flex align-items-center" href="account-chat.html"><i
-                                class="ai-messages fs-lg opacity-70 me-2"></i>Chat</a><a class="dropdown-item"
-                            href="account-favorites.html"><i class="ai-heart fs-lg opacity-70 me-2"></i>Favorites</a>
+
+                        <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Account</h6>
+                        <a class="dropdown-item" href="/profile">
+                            <i class="ai-user-check fs-lg opacity-70 me-2"></i>Profile
+                        </a>
+                        <a class="dropdown-item" href="/wallet"><i
+                                class="ai-wallet fs-base opacity-70 me-2 mt-n1"></i>Wallet</a>
                         <div class="dropdown-divider"></div>
                         <form action="/logout" method="POST">
                             @csrf
@@ -230,31 +260,32 @@
                                     <h3 class="h5 mb-1">{{ Auth::user()->name }}</h3>
                                     <p class="fs-sm text-muted mb-0">{{ Auth::user()->email }}</p>
                                 </div>
-                                <nav class="nav flex-column pb-2 pb-lg-4 mb-3">
-                                    <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Account</h4><a
-                                        class="nav-link fw-semibold py-2 px-0" href="account-overview.html"><i
-                                            class="ai-user-check fs-5 opacity-60 me-2"></i>Overview</a><a
-                                        class="nav-link fw-semibold py-2 px-0" href="account-settings.html"><i
-                                            class="ai-settings fs-5 opacity-60 me-2"></i>Settings</a><a
-                                        class="nav-link fw-semibold py-2 px-0" href="account-billing.html"><i
-                                            class="ai-wallet fs-5 opacity-60 me-2"></i>Billing</a>
-                                </nav>
                                 <nav class="nav flex-column pb-2 pb-lg-4 mb-1">
-                                    <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4><a
-                                        class="nav-link fw-semibold py-2 px-0" href="account-orders.html"><i
-                                            class="ai-cart fs-5 opacity-60 me-2"></i>Orders</a><a
-                                        class="nav-link fw-semibold py-2 px-0" href="account-earnings.html"><i
-                                            class="ai-activity fs-5 opacity-60 me-2"></i>Earnings</a><a
-                                        class="nav-link fw-semibold py-2 px-0" href="account-chat.html"><i
-                                            class="ai-messages fs-5 opacity-60 me-2"></i>Chat</a><a
-                                        class="nav-link fw-semibold py-2 px-0" href="account-favorites.html"><i
-                                            class="ai-heart fs-5 opacity-60 me-2"></i>Favorites</a>
+                                    <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4>
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/campaigns">
+                                        <i class="ai-bulb fs-5 opacity-60 me-2"></i>Explore</a>
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/contents">
+                                        <i class="ai-heart fs-5 opacity-60 me-2"></i>Content</a>
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/wallet/earnings">
+                                        <i class="ai-activity fs-5 opacity-60 me-2"></i>Earnings</a>
+                                    {{-- <a class="nav-link fw-semibold py-2 px-0" href="account-favorites.html">
+                                        <i class="ai-heart fs-5 opacity-60 me-2"></i>Favorites</a> --}}
+                                </nav>
+                                <nav class="nav flex-column pb-2 pb-lg-4 mb-3">
+                                    <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Account</h4>
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/profile">
+                                        <i class="ai-user-check fs-5 opacity-60 me-2"></i>Profile
+                                    </a>
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/wallet">
+                                        <i class="ai-wallet fs-5 opacity-60 me-2"></i>Wallet
+                                    </a>
                                 </nav>
                                 <nav class="nav flex-column">
                                     <form action="/logout" method="POST">
                                         @csrf
-                                        <button class="nav-link fw-semibold py-2 px-0" type="submit"><i
-                                                class="ai-logout fs-5 opacity-60 me-2"></i>Sign out</button>
+                                        <button class="nav-link fw-semibold py-2 px-0" type="submit">
+                                            <i class="ai-logout fs-5 opacity-60 me-2"></i>Sign out
+                                        </button>
                                     </form>
 
                                 </nav>
