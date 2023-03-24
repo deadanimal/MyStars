@@ -171,11 +171,11 @@
             <div class="container"><a class="navbar-brand pe-sm-3" href="/dashboard"><span
                         class="text-primary flex-shrink-0 me-2">
                     </span>My Stars</a>
-                <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+                {{-- <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
                     <input class="form-check-input" type="checkbox" id="theme-mode">
                     <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
                     <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
-                </div>
+                </div> --}}
                 <!-- User signed in state. Account dropdown on screens > 576px-->
                 <div class="dropdown nav d-none d-sm-block order-lg-3"><a class="nav-link d-flex align-items-center p-0"
                         href="#" data-bs-toggle="dropdown" aria-expanded="false"><img

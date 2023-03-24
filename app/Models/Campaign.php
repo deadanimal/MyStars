@@ -20,8 +20,9 @@ class Campaign extends Model
         'user_id',
     ];  
     
-    public function images()
+    public function attachments()
     {
-        return $this->morphMany(Image::class, 'taggable');
-    }    
+        return $this->hasMany(CampaignAttachment::class);
+    }  
+
 }

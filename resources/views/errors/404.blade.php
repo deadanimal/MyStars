@@ -196,7 +196,7 @@
         </div>
         <div class="d-flex flex-column justify-content-center w-lg-50 position-relative zindex-2 mt-auto mt-lg-0">
           <div class="text-center text-lg-start pt-5 pb-3 py-lg-5 px-3 px-sm-4 px-lg-5 mx-auto" style="max-width: 630px;">
-            <h1 class="display-1">Error 404</h1>
+            <h1 class="display-1">Error - Page Not Found</h1>
             <p class="lead pb-2 mb-4 mb-lg-5">The page you are looking for was moved, removed or might never existed.</p><a class="btn btn-lg btn-primary" href="/">Go to homepage</a>
           </div>
         </div>

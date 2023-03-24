@@ -78,7 +78,7 @@
                     <div class="d-sm-flex justify-content-center justify-content-lg-start pt-5 mt-lg-2">
                         <a class="btn btn-lg btn-primary w-100 w-sm-auto mb-2 mb-sm-0 me-sm-1"
                             href="/register?user_type=brand">Try it now</a>
-                        <a class="btn btn-lg btn-link" href="/case-studies">Our case studies<i
+                        <a class="btn btn-lg btn-link" href="/guides?tag=case">Our case studies<i
                                 class="ai-arrow-right ms-2"></i></a>
                     </div>
                 </div>
@@ -834,7 +834,7 @@
                         </div>
                         <div class="col-sm-6">
                             <label class="form-label fs-base" for="company">Email</label>
-                            <input class="form-control form-control-lg" type="email" placeholder="Email address"
+                            <input class="form-control form-control-lg" type="email" name='email' placeholder="Email address"
                                 required id="email">
                         </div>
                         <div class="col-sm-6">

@@ -8,7 +8,7 @@
         <section class="card border-0 py-1 p-md-2 p-xl-3 p-xxl-4 mb-4">
             <div class="card-body">
 
-                <form action="/campaigns" method="POST">
+                <form action="/campaigns" method="POST" enctype="multipart/form-data">
                     @csrf
 
                 <div class="mb-3">
@@ -46,6 +46,13 @@
                     <label for="textarea-input" class="form-label">Campaign Creative Direction</label>
                     <textarea class="form-control" id="textarea-input" rows="5" name="creative_direction" placeholder="Please put as much as you can"></textarea>
                 </div>
+
+                <div class="mb-3 row align-items-center">
+                    <label class="col-md-2 col-form-label" for="file-input">Attachment(s)</label>
+                    <div class="col-md-10">
+                        <input class="form-control" name="attachments[]" type="file" id="file-input" multiple>
+                    </div>
+                </div>               
 
                 <button class="btn btn-primary" type="submit">Create a Campaign</button>
 

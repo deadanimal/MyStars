@@ -186,9 +186,9 @@
                     <div class="col-sm-9 col-md-8 col-lg-7 offset-lg-1 order-md-2 pb-3 pb-sm-0 mt-md-n5 mb-4 mb-sm-5">
                         <div class="ps-md-4 ps-lg-0 mt-md-n4 mt-lg-n5">
                             <h1 class="display-5 mb-lg-4">Hey, I'm <span class='text-dark fw-bolder'>Afeez
-                                    Aziz</span>.<br>I love artificial intelligence, crypto &amp; social media</h1>
+                                    Aziz</span>.<br>I am very passionate about AI, crypto &amp; social media</h1>
                             <p class="fs-lg">I educate the public on how to use tools for AI, crypto, and social media
-                                to make the world a better place. </p>
+                                to make the world a better place. I run a lot of businesses to support these endeavours and social causes that are close to me. </p>
                             <div style="max-width: 24rem;">
                                 <div class="d-table text-dark mx-auto">
                                     <div class="ms-n4">
@@ -202,15 +202,16 @@
                                 </div>
                                 <div class="d-flex">
                                     <div class="pe-3 me-sm-3">
-                                        <h3 class="h5 fw-bold mb-4">Monthly</h3>
+                                        <h3 class="h5 fw-bold mb-4">Chat with me</h3>
+                                        <a href="/p/afeezaziz/chat">
                                         <button class="btn btn-lg btn-primary px-4" type="button"><span
-                                                class="text-light px-sm-2">$14.<sup>99</sup> / month</span></button>
+                                                class="text-light px-sm-2">On My Stars</button></a>
                                     </div>
                                     <div class="pe-3 me-sm-3">
                                         <div class="d-table position-relative text-dark mt-n3 mb-2">
                                             <h3
                                                 class="h5 fw-bold mb-0 position-absolute start-50 top-50 translate-middle">
-                                                Annual</h3>
+                                                Discuss</h3>
                                             <svg width="110" height="61" viewBox="0 0 110 61" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -218,16 +219,13 @@
                                                 </path>
                                             </svg>
                                         </div>
+                                        <a href="/p/afeezaziz/bookslot">
                                         <button class="btn btn-lg bg-dark px-4" type="button"><span
-                                                class="text-light px-sm-2">$89.<sup>99</sup> / year</span></button>
+                                                class="text-light px-sm-2">Book My Time</button>
+                                        </a>
                                         {{-- <div class="d-flex align-items-center pt-2 mt-1"><span
                                                 class="badge bg-danger text-light rounded-pill me-2">Expires</span><span
                                                 class="fs-sm">01/12 8:00 pm</span></div> --}}
-                                    </div>
-                                    <div class="pe-3 me-sm-3">
-                                        <h3 class="h5 fw-bold mb-4">Monthly</h3>
-                                        <button class="btn btn-lg btn-primary px-4" type="button"><span
-                                                class="text-light px-sm-2">$14.<sup>99</sup> / month</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -242,9 +240,8 @@
 
         <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
             <div class="pt-2 pt-sm-3 mt-md-3" style="max-width: 60rem;">
-                <h2 class="pb-3 mb-2 mb-sm-3 mb-lg-4">I'm a 32 year old blogger, fitness instructor and content
-                    creator. I was recognized as the <span class='text-primary'>top 100 sport influencers</span> under
-                    the age of 30. Over 25K people have already changed their life for the better with me.</h2>
+                <h2 class="pb-3 mb-2 mb-sm-3 mb-lg-4">I'm a 33 year old entreprenuer, with passions in a lot of stuffs. I was recognized as the <span class='text-primary'>top 100 influencers</span>
+                     for business and startups. Over 100,000 people have already changed their business strategy for the better with me.</h2>
                 <p class="fs-lg">Follow me on social media platforms:</p>
                 <div class="d-flex">
                     <a class="btn btn-outline-secondary btn-icon btn-sm btn-instagram me-3"
@@ -312,142 +309,7 @@
                 </div>
             </div>
         </section>
-        <!-- Guides (Carousel on screens < 992px)-->
-        <section class="position-relative py-2 py-sm-3 py-md-4 py-lg-5">
-            <div class="bg-secondary position-absolute top-0 start-0 w-100 h-100 d-none d-xxl-block"
-                style="border-top-left-radius: 8rem; border-bottom-right-radius: 8rem;"></div>
-            <div class="bg-secondary position-absolute top-0 start-0 w-100 h-100 d-none d-lg-block d-xxl-none"
-                style="border-top-left-radius: 4rem; border-bottom-right-radius: 4rem;"></div>
-            <div class="bg-secondary position-absolute top-0 start-0 w-100 h-100 d-lg-none"
-                style="border-top-left-radius: 2.25rem; border-bottom-right-radius: 2.25rem;"></div>
-            <div class="container position-relative zindex-2 py-5 mt-xl-2 mb-lg-2 mb-xl-3 mb-xxl-5 mt-xxl-4">
-                <h2 class="h1 pt-xxl-1 pb-4 mb-2 mb-lg-3">My Startups</h2>
-                <!-- Swiper slider-->
-                <div class="swiper"
-                    data-swiper-options="
-        {
-          &quot;spaceBetween&quot;: 24,
-          &quot;pagination&quot;: {
-            &quot;el&quot;: &quot;.swiper-pagination&quot;,
-            &quot;clickable&quot;: true
-          },
-          &quot;breakpoints&quot;: {
-            &quot;576&quot;: { &quot;slidesPerView&quot;: 2 },
-            &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }
-          }
-        }
-      ">
-                    <div class="swiper-wrapper">
-                        <!-- Item-->
-                        <div class="swiper-slide h-auto">
-                            <div class="card h-100 border-0 rounded-4 pb-3">
-                                <div class="position-relative ignore-dark-mode">
-                                    <div class="card-body position-absolute start-0 bottom-0 py-4">
-                                        <div class="d-table badge bg-danger rounded-pill mb-2">6 programs</div>
-                                        <div class="d-table badge bg-light text-nav rounded-pill">&gt; 230 exercises
-                                        </div>
-                                    </div><img class="rounded-4 rounded-bottom-0"
-                                        src="assets/img/landing/influencer/guides/01.jpg" alt="Guide">
-                                </div>
-                                <div class="card-body pb-4">
-                                    <div class="text-primary fw-bold pb-2 mb-1">Crypto</div>
-                                    <h3 class="h4">Red Pill Labs</h3>
-                                    <ul class="fs-sm ps-4 mb-0">
-                                        <li class="mb-2">Ut nunc ultricies nibh blandit odio in.</li>
-                                        <li class="mb-2">Nibh viverra volutpat viverra.</li>
-                                        <li class="mb-2">Ac lacus ut viverra iaculis neque scelerisque.</li>
-                                    </ul>
-                                </div>
-                                <div class="card-footer border-0 pt-0">
-                                    <button class="btn btn-outline-primary w-100" type="button">View</button>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="swiper-slide h-auto">
-                            <div class="card h-100 border-0 rounded-4 pb-3">
-                                <div class="position-relative ignore-dark-mode">
-                                    <div class="card-body position-absolute start-0 bottom-0 py-4">
-                                        <div class="d-table badge bg-danger rounded-pill mb-2">6 programs</div>
-                                        <div class="d-table badge bg-light text-nav rounded-pill">&gt; 230 exercises
-                                        </div>
-                                    </div><img class="rounded-4 rounded-bottom-0"
-                                        src="assets/img/landing/influencer/guides/01.jpg" alt="Guide">
-                                </div>
-                                <div class="card-body pb-4">
-                                    <div class="text-primary fw-bold pb-2 mb-1">Social Media</div>
-                                    <h3 class="h4">My Stars</h3>
-                                    <ul class="fs-sm ps-4 mb-0">
-                                        <li class="mb-2">Ut nunc ultricies nibh blandit odio in.</li>
-                                        <li class="mb-2">Nibh viverra volutpat viverra.</li>
-                                        <li class="mb-2">Ac lacus ut viverra iaculis neque scelerisque.</li>
-                                    </ul>
-                                </div>
-                                <div class="card-footer border-0 pt-0">
-                                    <button class="btn btn-outline-primary w-100" type="button">View</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Item-->
-                        <div class="swiper-slide h-auto">
-                            <div class="card h-100 border-0 rounded-4 pb-3">
-                                <div class="position-relative ignore-dark-mode">
-                                    <div class="card-body position-absolute start-0 bottom-0 py-4">
-                                        <div class="d-table badge bg-danger rounded-pill mb-2">12 programs</div>
-                                        <div class="d-table badge bg-light text-nav rounded-pill">&gt; 400 exercises
-                                        </div>
-                                    </div><img class="rounded-4 rounded-bottom-0"
-                                        src="assets/img/landing/influencer/guides/02.jpg" alt="Guide">
-                                </div>
-                                <div class="card-body pb-4">
-                                    <div class="text-primary fw-bold pb-2 mb-1">Artificial Intelligence</div>
-                                    <h3 class="h4">Beginner to expert guide</h3>
-                                    <ul class="fs-sm ps-4 mb-0">
-                                        <li class="mb-2">Nutrition guides for the best overall results.</li>
-                                        <li class="mb-2">Stretching routines.</li>
-                                        <li class="mb-2">Direct coaching and 24/7 access to community.</li>
-                                    </ul>
-                                </div>
-                                <div class="card-footer border-0 pt-0">
-                                    <button class="btn btn-outline-primary w-100" type="button">View</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Item-->
-                        <div class="swiper-slide h-auto">
-                            <div class="card h-100 border-0 rounded-4 pb-3">
-                                <div class="position-relative ignore-dark-mode">
-                                    <div class="card-body position-absolute start-0 bottom-0 py-4">
-                                        <div class="d-table badge bg-danger rounded-pill mb-2">8 programs</div>
-                                        <div class="d-table badge bg-light text-nav rounded-pill">&gt; 420 exercises
-                                        </div>
-                                    </div><img class="rounded-4 rounded-bottom-0"
-                                        src="assets/img/landing/influencer/guides/03.jpg" alt="Guide">
-                                </div>
-                                <div class="card-body pb-4">
-                                    <div class="text-primary fw-bold pb-2 mb-1">Software Development</div>
-                                    <h3 class="h4">Pipeline Network</h3>
-                                    <ul class="fs-sm ps-4 mb-0">
-                                        <li class="mb-2">Adipiscing vulputate ever in potenti velit.</li>
-                                        <li class="mb-2">Non metus orci convallis posuere.</li>
-                                        <li class="mb-2">Dolor commodo dignissim pharetra tempor.</li>
-                                    </ul>
-                                </div>
-                                <div class="card-footer border-0 pt-0">
-                                    <button class="btn btn-outline-primary w-100" type="button">View</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pagination (bullets)-->
-                    <div class="swiper-pagination position-relative bottom-0 mt-2 pt-4 d-lg-none"></div>
-                </div>
-            </div>
-        </section>
-        <!-- Results-->
         <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5">
             <div class="row py-2 py-sm-3 my-md-3">
                 <div class="col-lg-5 col-xl-4 pb-2 pb-sm-0 mb-4 mb-sm-5 mb-lg-0" data-aos="fade-up"
@@ -515,169 +377,8 @@
                 </div>
             </div>
         </section>
-        <!-- Testimonials slider-->
-        <section class="dark-mode w-100 px-sm-4 mx-auto" style="max-width: 1680px;">
-            <div class="position-relative zindex-2 pt-2 pb-3 py-sm-3 py-md-4 py-lg-5">
-                <div class="position-absolute top-0 start-0 w-100 h-100 rounded-5 d-none d-sm-block"
-                    style="background-color: #171a1e;"></div>
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-sm-none" style="background-color: #171a1e;">
-                </div>
-                <div class="container position-relative zindex-2 py-5 my-xl-3 my-xxl-5">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-11 col-sm-9 col-md-8 col-lg-7 pb-3">
-                            <!-- Bided images-->
-                            <div class="binded-content">
-                                <!-- Item-->
-                                <div class="binded-item active" id="image1"><img
-                                        src="assets/img/landing/influencer/testimonials/01.png" alt="Image"></div>
-                                <!-- Items-->
-                                <div class="binded-item" id="image2"><img
-                                        src="assets/img/landing/influencer/testimonials/02.png" alt="Image"></div>
-                            </div>
-                        </div>
-                        <div class="col-11 col-sm-9 col-md-8 col-lg-5 col-xl-4 offset-xl-1">
-                            <div class="ps-lg-4 ps-xl-0 mt-lg-n4 mt-xl-n5">
-                                <!-- Swiper slider-->
-                                <div class="swiper"
-                                    data-swiper-options="{
-                  &quot;spaceBetween&quot;: 30,
-                  &quot;loop&quot;: true,
-                  &quot;bindedContent&quot;: true,
-                  &quot;pagination&quot;: {
-                    &quot;el&quot;: &quot;.testimonials-count&quot;,
-                    &quot;type&quot;: &quot;fraction&quot;
-                  },
-                  &quot;navigation&quot;: {
-                    &quot;prevEl&quot;: &quot;#prev-testimonial&quot;,
-                    &quot;nextEl&quot;: &quot;#next-testimonial&quot;
-                  }
-                }">
-                                    <div class="swiper-wrapper">
-                                        <!-- Item-->
-                                        <div class="swiper-slide" data-swiper-binded="#image1">
-                                            <div class="ai-quotes text-primary display-3 mb-4"></div>
-                                            <p class="lead pb-1 pb-sm-2">Odio risus amet amet tincidunt. Turpis nibh
-                                                ultricies morbi porta ipsum adipiscing. Morbi magnis nunc in facilisis
-                                                gravida adipiscing in elementum aliquet nunc.</p>
-                                            <h3 class="h5 fw-bold mb-0">Wade Warren</h3>
-                                        </div>
-                                        <!-- Item-->
-                                        <div class="swiper-slide" data-swiper-binded="#image2">
-                                            <div class="ai-quotes text-primary display-3 mb-4"></div>
-                                            <p class="lead pb-1 pb-sm-2">Blandit facilisi eget feugiat ultricies. Id
-                                                habitant lectus imperdiet amet elementum lectus lacus sit laoreet. Quis
-                                                nullam. Gravida pretium iaculis lorem sit in elementum.</p>
-                                            <h3 class="h5 fw-bold mb-0">Annete Smith</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Swiper controls-->
-                    <div
-                        class="d-flex align-items-center justify-content-center pt-4 pt-md-5 mt-2 mt-sm-3 mt-md-0 mt-xl-2">
-                        <button class="btn btn-icon btn-sm btn-outline-primary rounded-circle me-3" type="button"
-                            id="prev-testimonial"><i class="ai-arrow-left"></i></button>
-                        <div class="testimonials-count fw-medium flex-shrink-0 text-center" style="width: 2.5rem;">
-                        </div>
-                        <button class="btn btn-icon btn-sm btn-outline-primary rounded-circle ms-3" type="button"
-                            id="next-testimonial"><i class="ai-arrow-right"></i></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container position-relative py-5 my-lg-3 my-xl-4 my-xxl-5">
-            <div class="position-absolute top-0 end-0 d-none d-md-block"
-                style="animation: rotate-cw 70s linear infinite; margin-top: -190px; margin-right: 100px;">
-                <svg class="text-danger" width="306" height="306" viewBox="0 0 306 306" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M150.114 3.79989C150.941 0.89425 155.059 0.894232 155.886 3.7999L168.982 49.8433C170.097 53.7629 175.181 54.7742 177.711 51.5796L207.431 14.0528C209.306 11.6846 213.111 13.2606 212.762 16.2613L207.242 63.8117C206.772 67.8596 211.082 70.7395 214.642 68.7562L256.46 45.4592C259.099 43.989 262.011 46.901 260.541 49.54L237.244 91.3582C235.261 94.9181 238.14 99.2281 242.188 98.7582L289.739 93.2377C292.739 92.8893 294.315 96.694 291.947 98.5695L254.42 128.289C251.226 130.819 252.237 135.903 256.157 137.018L302.2 150.114C305.106 150.941 305.106 155.059 302.2 155.886L256.157 168.982C252.237 170.097 251.226 175.181 254.42 177.711L291.947 207.431C294.315 209.306 292.739 213.111 289.739 212.762L242.188 207.242C238.14 206.772 235.261 211.082 237.244 214.642L260.541 256.46C262.011 259.099 259.099 262.011 256.46 260.541L214.642 237.244C211.082 235.261 206.772 238.14 207.242 242.188L212.762 289.739C213.111 292.739 209.306 294.315 207.431 291.947L177.711 254.42C175.181 251.226 170.097 252.237 168.982 256.157L155.886 302.2C155.059 305.106 150.941 305.106 150.114 302.2L137.018 256.157C135.903 252.237 130.819 251.226 128.289 254.42L98.5695 291.947C96.694 294.315 92.8893 292.739 93.2377 289.739L98.7582 242.188C99.2281 238.14 94.9181 235.261 91.3582 237.244L49.54 260.541C46.901 262.011 43.989 259.099 45.4592 256.46L68.7562 214.642C70.7395 211.082 67.8596 206.772 63.8117 207.242L16.2613 212.762C13.2606 213.111 11.6846 209.306 14.0528 207.431L51.5796 177.711C54.7742 175.181 53.7629 170.097 49.8433 168.982L3.79989 155.886C0.89425 155.059 0.894232 150.941 3.7999 150.114L49.8433 137.018C53.7629 135.903 54.7742 130.819 51.5796 128.289L14.0528 98.5695C11.6846 96.694 13.2606 92.8893 16.2613 93.2377L63.8117 98.7582C67.8596 99.2281 70.7395 94.9181 68.7562 91.3582L45.4592 49.54C43.989 46.901 46.901 43.989 49.54 45.4592L91.3582 68.7562C94.9181 70.7395 99.2281 67.8596 98.7582 63.8117L93.2377 16.2613C92.8893 13.2606 96.694 11.6846 98.5695 14.0528L128.289 51.5796C130.819 54.7742 135.903 53.7629 137.018 49.8433L150.114 3.79989Z"
-                        stroke="currentColor" stroke-width="2"></path>
-                </svg>
-            </div>
-            <div class="pb-3 pt-2 py-sm-3 my-md-3 my-lg-4" style="max-width: 40rem;">
-
-                <!-- Begin Mailchimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet"
-                    type="text/css">
-                <style type="text/css">
-                    #mc_embed_signup {
-                        background: #fff;
-                        clear: left;
-                        font: 14px Helvetica, Arial, sans-serif;
-                        width: 600px;
-                    }
-
-                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
- We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div id="mc_embed_signup">
-                    <form
-                        action="https://stars.us21.list-manage.com/subscribe/post?u=763b153452490e714d20ad796&amp;id=6571b25868&amp;f_id=000af9e1f0"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                        class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <h2>Subscribe</h2>
-                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                            <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                                </label>
-                                <input type="email" value="" name="EMAIL" class="required email"
-                                    id="mce-EMAIL" required>
-                                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-                            </div>
-                            <div id="mce-responses" class="clear foot">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                    name="b_763b153452490e714d20ad796_6571b25868" tabindex="-1" value="">
-                            </div>
-                            <div class="optionalParent">
-                                <div class="clear foot">
-                                    <input type="submit" value="Subscribe" name="subscribe"
-                                        id="mc-embedded-subscribe" class="button">
-
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                <script type='text/javascript'>
-                    (function($) {
-                        window.fnames = new Array();
-                        window.ftypes = new Array();
-                        fnames[0] = 'EMAIL';
-                        ftypes[0] = 'email';
-                        fnames[1] = 'FNAME';
-                        ftypes[1] = 'text';
-                        fnames[2] = 'LNAME';
-                        ftypes[2] = 'text';
-                        fnames[3] = 'ADDRESS';
-                        ftypes[3] = 'address';
-                        fnames[4] = 'PHONE';
-                        ftypes[4] = 'phone';
-                        fnames[5] = 'BIRTHDAY';
-                        ftypes[5] = 'birthday';
-                    }(jQuery));
-                    var $mcj = jQuery.noConflict(true);
-                </script>
-                <!--End mc_embed_signup-->
 
 
-                {{-- <h2 class="h1">Always stay up to date</h2>
-                <p class="fs-lg pb-2 pb-sm-3 pb-lg-4">Be the first to hear the latest news and updates!</p>
-                <div class="input-group input-group-lg">
-                    <input class="form-control" type="email" placeholder="Email address">
-                    <button class="btn btn-primary" type="button">Subscribe</button>
-                </div> --}}
-            </div>
-        </section>
 
         <section class="ignore-dark-mode position-relative overflow-hidden">
             <div class="position-absolute top-0 start-0 w-100 h-100" data-aos="zoom-in" data-aos-duration="600"
@@ -697,18 +398,20 @@
                     <div class="col-md-6 col-xl-5 offset-md-1 pb-3 pb-sm-0 mt-md-n5 mb-4 mb-sm-5" data-aos="fade-up"
                         data-aos-duration="850" data-aos-offset="180" data-disable-parallax-down="md">
                         <div class="mx-auto" style="max-width: 25rem;">
-                            <h2 class="display-5 pb-5 mb-2">Jumpstart healthy change in your life today!</h2>
+                            <h2 class="display-5 pb-5 mb-2">Want to improve your business today? Discuss with me now!</h2>
                             <div class="d-flex">
                                 <div class="pe-3 me-lg-3">
+                                    <a href="/p/afeezaziz/chat">
                                     <button class="btn btn-lg btn-primary px-4" type="button"><span
-                                            class="text-light px-sm-2">$14.<sup>99</sup> / month</span></button>
+                                            class="text-light px-sm-2">Chat With Me</button>
+                                    </a>
                                 </div>
                                 <div>
+                                    <a href="/p/afeezaziz/booktime">
                                     <button class="btn btn-lg bg-dark px-4" type="button"><span
-                                            class="text-light px-sm-2">$89.<sup>99</sup> / year</span></button>
-                                    <div class="d-flex align-items-center pt-2 mt-1"><span
-                                            class="badge bg-danger text-light rounded-pill me-2">Expires</span><span
-                                            class="fs-sm">01/12 8:00 pm</span></div>
+                                            class="text-light px-sm-2">Book My Time</button>
+                                    </a>
+                                   
                                 </div>
                             </div>
                         </div>

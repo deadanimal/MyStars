@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
 use App\Models\Campaign;
+use App\Models\CampaignAttachment;
 use App\Models\Content;
 
 class CampaignController extends Controller
@@ -54,7 +55,7 @@ class CampaignController extends Controller
 
     public function create_campaign(Request $request) {
 
-        Campaign::create([
+        $campaign = Campaign::create([
             'title' => $request->title,
             'status' => 'created',
             'platform' => $request->platform,
@@ -64,6 +65,22 @@ class CampaignController extends Controller
             'creative_direction' => $request->creative_direction,
             'user_id' => $request->user()->id,
         ]);
+
+        foreach($request->file('attachments') as $attached_file) {
+            $campaign_attachment = New CampaignAttachment;
+            $campaign_attachment->link = $attached_file->store('mystars/campaign_attachment');
+            $campaign_attachment->campaign_id = $campaign->id;
+            $campaign_attachment->save();
+        }   
+
+        // if($request->file('attachments')) {
+        //     foreach($request->file('attachments') as $attached_file) {
+        //         $campaign_attachment = New CampaignAttachment;
+        //         $campaign_attachment->link = $attached_file->store('mystars/campaign_attachment');
+        //         $campaign_attachment->campaign_id = $campaign->id;
+        //         $campaign_attachment->save();
+        //     }
+        // }
 
         Alert::success('Success', 'A new campaign has been created!');
 

@@ -170,11 +170,12 @@
             <div class="container"><a class="navbar-brand pe-sm-3" href="/"><span
                         class="text-primary flex-shrink-0 me-2">
                         </span>My Stars</a>
-                <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+                {{-- <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
                     <input class="form-check-input" type="checkbox" id="theme-mode">
                     <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
                     <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
-                </div><a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="/dashboard"></i>Dashboard</a>
+                </div> --}}
+                <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="/dashboard"></i>Dashboard</a>
                 <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
                 {{-- <nav class="collapse navbar-collapse" id="navbarNav">
@@ -427,7 +428,7 @@
                 <div class="col-sm-3 col-lg-2 offset-xl-1 mb-4 mb-sm-0">
                     <ul class="nav flex-column">
                         <li><a class="nav-link py-1 px-0" href="/services">Services</a></li>
-                        <li><a class="nav-link py-1 px-0" href="/case-studies">Case studies</a></li>
+                        <li><a class="nav-link py-1 px-0" href="/guides?tag=case">Case studies</a></li>
                         <li><a class="nav-link py-1 px-0" href="/rewards">Rewards</a></li>
                     </ul>
                 </div>
