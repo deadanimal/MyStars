@@ -28,6 +28,15 @@
                 </div>
 
                 <div class="mb-3">
+                    <label for="select-input" class="form-label">Region</label>
+                    <select class="form-select" id="select-input" name="region">
+                        <option value="US" selected>United States of America</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="">Global</option>
+                    </select>
+                </div>                
+
+                <div class="mb-3">
                     <label for="text-input" class="form-label">URL to Reference Media</label>
                     <input class="form-control" type="text" id="text-input" name="reference_link" placeholder="https://....">
                 </div>

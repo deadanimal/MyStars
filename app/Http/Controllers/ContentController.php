@@ -12,7 +12,7 @@ class ContentController extends Controller
     
     public function show_contents(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
         
@@ -23,14 +23,14 @@ class ContentController extends Controller
             $contents = Content::all();
             return view('brand.content_list', compact('contents'));            
         } else {
-            $contents = Content::where('profile_id', $profile_id)->get();
+            $contents = Content::where('creator_id', $profile_id)->get();
             return view('creator.content_list', compact('contents'));
         }        
     }
 
     public function show_content(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
         $id = (int) $request->route('content_id');        
@@ -53,7 +53,7 @@ class ContentController extends Controller
     public function create_content(Request $request) {
 
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;        
 
@@ -62,7 +62,7 @@ class ContentController extends Controller
             'status' => 'created',
             'brand_id' => $request->brand_id,
             'campaign_id' => $request->campaign_id,
-            'profile_id' => $profile_id,
+            'creator_id' => $profile_id,
         ]);
 
         Alert::success('Success', 'A new content has been created!');
@@ -72,10 +72,10 @@ class ContentController extends Controller
 
     public function update_content(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
-                
+
         $id = (int) $request->route('content_id');
         $content = Content::find($id);
 

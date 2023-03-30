@@ -33,7 +33,7 @@ class SiteController extends Controller
 
     public function show_dashboard(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
         
@@ -47,7 +47,7 @@ class SiteController extends Controller
 
     public function show_admin_dashboard(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
 
@@ -56,7 +56,7 @@ class SiteController extends Controller
 
     public function show_profile(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
 

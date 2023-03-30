@@ -19,7 +19,7 @@ class ProfileController extends Controller
 
         public function show_profile(Request $request) {
             $user = $request->user();
-            $profile = $user->profile();
+            $profile = $user->profile;
             $profile_id = $profile->id;
             $profile_type = $profile->profile_type;
 
@@ -28,7 +28,7 @@ class ProfileController extends Controller
 
         public function update_profile(Request $request) {
             $user = $request->user();
-            $profile = $user->profile();
+            $profile = $user->profile;
             $profile_id = $profile->id;
             $profile_type = $profile->profile_type;
 
@@ -51,7 +51,7 @@ class ProfileController extends Controller
 
         public function update_pfp(Request $request) {
             $user = $request->user();
-            $profile = $user->profile();        
+            $profile = $user->profile;        
             $profile->profile_picture = $request->file('profile_picture')->store('mystars/profile_picture');
             $profile->save();
             Alert::success('Success', 'Profile picture has been updated');

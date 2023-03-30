@@ -15,6 +15,7 @@ class Campaign extends Model
         'platform',
         'reference_link',
         'caption',
+        'region',
         'brand_introduction',
         'creative_direction',
         'profile_id',

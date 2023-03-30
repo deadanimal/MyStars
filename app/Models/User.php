@@ -16,8 +16,6 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'user_type',
-        'bio'
     ];
 
     protected $hidden = [
@@ -32,6 +30,6 @@ class User extends Authenticatable
 
     public function profile()
     {
-        return $this->belongsTo(Profile::class);
+        return $this->hasOne(Profile::class);
     }      
 }

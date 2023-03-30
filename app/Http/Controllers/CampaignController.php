@@ -15,7 +15,7 @@ class CampaignController extends Controller
 
     public function show_campaigns(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
         
@@ -33,7 +33,7 @@ class CampaignController extends Controller
 
     public function show_campaign(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
         $id = (int) $request->route('campaign_id');        
@@ -60,7 +60,7 @@ class CampaignController extends Controller
     public function create_campaign(Request $request) {
 
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;        
 
@@ -70,6 +70,7 @@ class CampaignController extends Controller
             'platform' => $request->platform,
             'reference_link' => $request->reference_link,
             'caption' => $request->caption,
+            'region' => $request->region,
             'brand_introduction' => $request->brand_introduction,
             'creative_direction' => $request->creative_direction,
             'profile_id' => $profile_id,
@@ -98,7 +99,7 @@ class CampaignController extends Controller
 
     public function update_campaign(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
 
@@ -125,7 +126,7 @@ class CampaignController extends Controller
 
     public function show_analytics(Request $request) {
         $user = $request->user();
-        $profile = $user->profile();
+        $profile = $user->profile;
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
 

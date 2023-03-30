@@ -180,7 +180,7 @@
                 <div class="dropdown nav d-none d-sm-block order-lg-3"><a class="nav-link d-flex align-items-center p-0"
                         href="#" data-bs-toggle="dropdown" aria-expanded="false"><img
                             class="border rounded-circle"
-                            src="https://pipeline-apps.sgp1.digitaloceanspaces.com/{{ Auth::user()->profile_picture }}"
+                            src="https://pipeline-apps.sgp1.digitaloceanspaces.com/{{ Auth::user()->profile->profile_picture }}"
                             width="48" alt="Profile Picture">
                     </a>
                     <div class="dropdown-menu dropdown-menu-end my-1">
@@ -270,10 +270,10 @@
                                 data-bs-dismiss="offcanvas" data-bs-target="#sidebarAccount"></button>
                             <div class="offcanvas-body">
                                 <div class="pb-2 pb-lg-0 mb-4 mb-lg-5"><img class="d-block rounded-circle mb-2"
-                                        src="https://pipeline-apps.sgp1.digitaloceanspaces.com/{{ Auth::user()->profile_picture }}"
+                                        src="https://pipeline-apps.sgp1.digitaloceanspaces.com/{{ Auth::user()->profile->profile_picture }}"
                                         width="80" alt="Profile">
-                                    <h3 class="h5 mb-1">{{ Auth::user()->name }}</h3>
-                                    <p class="fs-sm text-muted mb-0">{{ Auth::user()->email }}</p>
+                                    <h3 class="h5 mb-1">{{ Auth::user()->profile->name }}</h3>
+                                    <p class="fs-sm text-muted mb-0">{{ ucfirst(Auth::user()->profile->profile_type) }}</p>
                                 </div>
 
                                 @if (Auth::user()->user_type == 'admin')
