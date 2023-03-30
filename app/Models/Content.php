@@ -12,8 +12,7 @@ class Content extends Model
     protected $fillable = [
         'url',
         'status',
-        'user_id',
-        'brand_id',
+        'profile_id',
         'campaign_id',
     ];      
 }

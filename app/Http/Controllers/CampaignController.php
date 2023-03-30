@@ -14,14 +14,16 @@ class CampaignController extends Controller
 {
 
     public function show_campaigns(Request $request) {
-        $user_id = $request->user()->id;
-        $user_type = $request->user()->user_type;
+        $user = $request->user();
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
         
-        if($user_type == 'admin') {
+        if($profile_type == 'admin') {
             $campaings = Campaign::all();
             return view('admin.campaign_list', compact('campaigns'));
-        } else if ($user_type == 'brand') {
-            $campaigns = Campaign::where('user_id', $user_id)->get();
+        } else if ($profile_type == 'brand') {
+            $campaigns = Campaign::where('profile_id', $profile_id)->get();
             return view('brand.campaign_list', compact('campaigns'));
         } else {
             $campaings = Campaign::all();
@@ -31,13 +33,15 @@ class CampaignController extends Controller
 
     public function show_campaign(Request $request) {
         $user = $request->user();
-        $user_type = $user->user_type;
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
         $id = (int) $request->route('campaign_id');        
 
-        if($user_type == 'admin') {
+        if($profile_type == 'admin') {
             $campaign = Campaign::find($id);
             return view('admin.campaign_detail', compact('campaign'));
-        } else if ($user_type == 'brand') {
+        } else if ($profile_type == 'brand') {
             $campaign = Campaign::where([
                 ['id', '=', $id],
                 ['user_id', '=', $user->id],
@@ -55,6 +59,11 @@ class CampaignController extends Controller
 
     public function create_campaign(Request $request) {
 
+        $user = $request->user();
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;        
+
         $campaign = Campaign::create([
             'title' => $request->title,
             'status' => 'created',
@@ -63,7 +72,7 @@ class CampaignController extends Controller
             'caption' => $request->caption,
             'brand_introduction' => $request->brand_introduction,
             'creative_direction' => $request->creative_direction,
-            'user_id' => $request->user()->id,
+            'profile_id' => $profile_id,
         ]);
 
         foreach($request->file('attachments') as $attached_file) {
@@ -89,11 +98,15 @@ class CampaignController extends Controller
 
     public function update_campaign(Request $request) {
         $user = $request->user();
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
+
         $id = (int) $request->route('campaign_id');   
         
         $campaign = Campaign::where([
             ['id', '=', $id],
-            ['user_id', '=', $user->id],
+            ['profile_id', '=', $profile_id],
         ])->first();
 
         $campaign->update([
@@ -112,11 +125,13 @@ class CampaignController extends Controller
 
     public function show_analytics(Request $request) {
         $user = $request->user();
-        $user_type = $user->user_type;
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
 
-        if($user_type == 'admin') {
+        if($profile_type == 'admin') {
             return view('admin.analytics');
-        } else if ($user_type == 'brand') {
+        } else if ($profile_type == 'brand') {
 
             return view('brand.analytics');
         } else {

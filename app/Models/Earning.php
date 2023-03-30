@@ -11,7 +11,7 @@ class Earning extends Model
 
     protected $fillable = [
         'wallet_id',
-        'user_id',
+        'profile_id',
         'content_id',
         'status',
         'amount',

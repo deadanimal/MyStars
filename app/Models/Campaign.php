@@ -17,7 +17,7 @@ class Campaign extends Model
         'caption',
         'brand_introduction',
         'creative_direction',
-        'user_id',
+        'profile_id',
     ];  
     
     public function attachments()

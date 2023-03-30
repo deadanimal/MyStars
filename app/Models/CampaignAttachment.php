@@ -12,7 +12,7 @@ class CampaignAttachment extends Model
     protected $fillable = [
         'link',        
         'campaign_id',
-        'user_id',
+        'profile_id',
     ];      
 
     public function campaign()

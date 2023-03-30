@@ -33,7 +33,11 @@ class SiteController extends Controller
 
     public function show_dashboard(Request $request) {
         $user = $request->user();
-        if ($user->user_type == 'admin') {
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
+        
+        if ($profile->profile_type == 'admin') {
             return redirect('/admin');
         } else {
             return redirect('/campaigns');
@@ -43,12 +47,20 @@ class SiteController extends Controller
 
     public function show_admin_dashboard(Request $request) {
         $user = $request->user();
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
+
         return view('dashboard');
     }     
 
     public function show_profile(Request $request) {
         $user = $request->user();
-        return view('profile', compact('user'));
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
+
+        return view('profile', compact('profile'));
     }    
 
     public function show_guides(Request $request) {        

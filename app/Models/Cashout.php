@@ -11,7 +11,7 @@ class Cashout extends Model
 
     protected $fillable = [
         'wallet_id',
-        'user_id',
+        'profile_id',
         'status',
         'amount',
     ];     

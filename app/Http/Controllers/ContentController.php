@@ -11,30 +11,34 @@ class ContentController extends Controller
 {
     
     public function show_contents(Request $request) {
-        $user_id = $request->user()->id;
-        $user_type = $request->user()->user_type;
+        $user = $request->user();
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
         
-        if($user_type == 'admin') {
+        if($profile_type == 'admin') {
             $contents = Content::all();
             return view('admin.content_list', compact('contents'));
-        } else if ($user_type == 'brand') {
+        } else if ($profile_type == 'brand') {
             $contents = Content::all();
             return view('brand.content_list', compact('contents'));            
         } else {
-            $contents = Content::where('user_id', $user_id)->get();
+            $contents = Content::where('profile_id', $profile_id)->get();
             return view('creator.content_list', compact('contents'));
         }        
     }
 
     public function show_content(Request $request) {
         $user = $request->user();
-        $user_type = $user->user_type;
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
         $id = (int) $request->route('content_id');        
 
-        if($user_type == 'admin') {
+        if($profile_type == 'admin') {
             $content = Content::find($id);
             return view('admin.content_detail', compact('content'));
-        } else if ($user_type == 'brand') {
+        } else if ($profile_type == 'brand') {
             $content = Content::where([
                 ['id', '=', $id],
                 ['user_id', '=', $user->id],
@@ -48,17 +52,33 @@ class ContentController extends Controller
 
     public function create_content(Request $request) {
 
+        $user = $request->user();
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;        
+
         Content::create([
             'url' => $request->url,
             'status' => 'created',
             'brand_id' => $request->brand_id,
             'campaign_id' => $request->campaign_id,
-            'user_id' => $request->user()->id,
+            'profile_id' => $profile_id,
         ]);
 
         Alert::success('Success', 'A new content has been created!');
 
         return back();
+    }
+
+    public function update_content(Request $request) {
+        $user = $request->user();
+        $profile = $user->profile();
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
+                
+        $id = (int) $request->route('content_id');
+        $content = Content::find($id);
+
     }
 
 }
