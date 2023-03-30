@@ -45,9 +45,9 @@ class CreateNewUser implements CreatesNewUsers
         $profile->name = $user->name;
 
         if($input['user_type'] == 'brand') {
-            $profile_type = 'brand';
+            $profile->profile_type = 'brand';
         } else {
-            $profile_type = 'creator';
+            $profile->profile_type = 'creator';
         }   
         
         $profile->save();
