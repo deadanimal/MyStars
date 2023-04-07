@@ -49,7 +49,7 @@ class ProfileController extends Controller
             return back();            
         }
 
-        public function update_pfp(Request $request) {
+        public function update_profile_picture(Request $request) {
             $user = $request->user();
             $profile = $user->profile;        
             $profile->profile_picture = $request->file('profile_picture')->store('mystars/profile_picture');

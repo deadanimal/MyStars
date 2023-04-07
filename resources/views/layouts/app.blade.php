@@ -185,17 +185,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-end my-1">
 
-                        @if (Auth::user()->user_type == 'admin')
-                            <a class="dropdown-item" href="/campaigns">
-                                Campaign
-                            </a>
-                            <a class="dropdown-item" href="/contents">
-                                Content
-                            </a>
-                            <a class="dropdown-item" href="/finance">
-                                Finance
-                            </a>
-                        @elseif(Auth::user()->user_type == 'brand')
+                        @if(Auth::user()->profile->profile_type == 'brand')
                             <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">Dashboard</h6>
                             <a class="dropdown-item" href="/create-campaign">
                                 <i class="ai-bulb fs-lg opacity-70 me-2"></i> Ideate
@@ -276,22 +266,11 @@
                                     <p class="fs-sm text-muted mb-0">{{ ucfirst(Auth::user()->profile->profile_type) }}</p>
                                 </div>
 
-                                @if (Auth::user()->user_type == 'admin')
-                                    <a class="nav-link fw-semibold py-2 px-0" href="/campaigns">
-                                        Campaign
-                                    </a>
-                                    <a class="nav-link fw-semibold py-2 px-0" href="/contents">
-                                        Content
-                                    </a>
-                                    <a class="nav-link fw-semibold py-2 px-0" href="/finance">
-                                        Finance
-                                    </a>   
-                                                                                                     
 
-                                @elseif(Auth::user()->user_type == 'brand')
+                                @if(Auth::user()->profile->profile_type == 'brand')
                                     <nav class="nav flex-column pb-2 pb-lg-4 mb-1">
                                         <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4>
-                                        <a class="nav-link fw-semibold py-2 px-0" href="/create-campaign">
+                                        <a class="nav-link fw-semibold py-2 px-0" href="/campaigns/create">
                                             <i class="ai-bulb fs-5 opacity-60 me-2"></i>Ideate</a>
                                         <a class="nav-link fw-semibold py-2 px-0" href="/campaigns">
                                             <i class="ai-heart fs-5 opacity-60 me-2"></i>Campaign</a>
@@ -333,6 +312,13 @@
                                 @endif
 
                                 <nav class="nav flex-column">
+                                    
+                                    @if(Auth::user()->admin)
+                                    <a class="nav-link fw-semibold py-2 px-0" href="/guides">
+                                        <i class="ai-tool fs-5 opacity-60 me-2"></i>Admin
+                                    </a>
+                                    @endif
+
                                     <a class="nav-link fw-semibold py-2 px-0" href="/guides">
                                         <i class="ai-help fs-5 opacity-60 me-2"></i>Guide
                                     </a>
@@ -341,6 +327,7 @@
                                         <button class="nav-link fw-semibold py-2 px-0" type="submit">
                                             <i class="ai-logout fs-5 opacity-60 me-2"></i>Sign out
                                         </button>
+
                                     </form>
 
                                 </nav>

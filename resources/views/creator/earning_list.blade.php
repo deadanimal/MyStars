@@ -1,4 +1,4 @@
-@extends('layout-auth')
+@extends('layouts.app')
 
 @section('content')
     <div class="col-lg-9 pt-4 pb-2 pb-sm-4">

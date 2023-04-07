@@ -24,10 +24,10 @@ class CampaignController extends Controller
             return view('admin.campaign_list', compact('campaigns'));
         } else if ($profile_type == 'brand') {
             $campaigns = Campaign::where('profile_id', $profile_id)->get();
-            return view('brand.campaign_list', compact('campaigns'));
+            return view('campaign.brand_list', compact('campaigns'));
         } else {
             $campaings = Campaign::all();
-            return view('creator.campaign_list', compact('campaings'));
+            return view('campaign.creator_list', compact('campaings'));
         }        
     }
 
@@ -54,7 +54,7 @@ class CampaignController extends Controller
     } 
     
     public function show_create_campaign(Request $request) {
-        return view('brand.campaign_creation');
+        return view('campaign.brand_creation');
     }
 
     public function create_campaign(Request $request) {
@@ -82,15 +82,6 @@ class CampaignController extends Controller
             $campaign_attachment->campaign_id = $campaign->id;
             $campaign_attachment->save();
         }   
-
-        // if($request->file('attachments')) {
-        //     foreach($request->file('attachments') as $attached_file) {
-        //         $campaign_attachment = New CampaignAttachment;
-        //         $campaign_attachment->link = $attached_file->store('mystars/campaign_attachment');
-        //         $campaign_attachment->campaign_id = $campaign->id;
-        //         $campaign_attachment->save();
-        //     }
-        // }
 
         Alert::success('Success', 'A new campaign has been created!');
 

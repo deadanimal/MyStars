@@ -1,4 +1,4 @@
-@extends('layout-auth')
+@extends('layouts.app')
 
 @section('content')
     <!-- Page content-->

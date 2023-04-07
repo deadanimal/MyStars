@@ -1,4 +1,4 @@
-@extends('layout-static')
+@extends('layouts.static')
 
 @section('content')
     <!-- Page content-->
@@ -825,6 +825,9 @@
             <div class="card-body position-relative zindex-2 py-5">
                 <form class="mx-auto" action="/register" method="POST" style="max-width: 800px;">
                     @csrf
+
+                    <input type="hidden" id="terms" name="terms" value=1>
+
                     <h2 class="h1 card-title text-center pb-4">Register for My Stars</h2>
                     <div class="row g-4">
                         <div class="col-sm-6">

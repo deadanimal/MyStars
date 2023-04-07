@@ -176,7 +176,7 @@
                     </p>
                     <form class="needs-validation" novalidate action="register" method="POST">
                         @csrf
-                        @if ($user_type == 'none')
+                        {{-- @if ($user_type == 'none')
                             <div class="mb-2 mb-md-3 row align-items-center">
                                 <label class="col-md-4 col-form-label" for="select-input">Account Type</label>
                                 <div class="col-md-8">
@@ -188,7 +188,7 @@
                             </div>
                         @else
                             <input type="hidden" name="user_type" value="{{$user_type}}">
-                        @endif
+                        @endif --}}
                         <div class="row row-cols-1 row-cols-sm-2">
                             <div class="col mb-4">
                                 <input class="form-control form-control-lg" type="text" placeholder="Your name"
@@ -218,11 +218,16 @@
                         <div class="pb-4">
                             <div class="form-check my-2">
                                 <input class="form-check-input" type="checkbox" id="terms" name="terms">
-                                <label class="form-check-label ms-1" for="terms">I agree to <a
-                                        href="/terms">Terms &amp; Conditions</a></label>
+                                <label class="form-check-label ms-1" for="terms">I agree to <a href="/terms">Terms
+                                        &amp; Conditions</a></label>
                             </div>
                         </div>
-                        <button class="btn btn-lg btn-primary w-100 mb-4" type="submit">Sign up</button>
+                        <div class="col-sm-12 text-center pt-4">
+                            <button class="btn btn-lg btn-light" name="user_type" value="brand" type="submit">Register as Brand</button>
+                            <button class="btn btn-lg btn-primary ml-3" name="user_type" value="creator" type="submit">Register as Creator</button>
+                        </div>
+
+
 
                     </form>
                 </div>

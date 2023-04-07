@@ -23,7 +23,6 @@ class CreateNewUser implements CreatesNewUsers
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'terms' => ['required'],
-            'user_type' => ['required', 'string', 'max:255'],
             'email' => [
                 'required',
                 'string',
@@ -32,7 +31,7 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
-        ])->validate();
+        ])->validate();        
 
         $user = User::create([
             'name' => $input['name'],
@@ -40,17 +39,11 @@ class CreateNewUser implements CreatesNewUsers
             'password' => Hash::make($input['password']),
         ]);
 
-        $profile = New Profile;
-        $profile->user_id = $user->id;
-        $profile->name = $user->name;
-
-        if($input['user_type'] == 'brand') {
-            $profile->profile_type = 'brand';
-        } else {
-            $profile->profile_type = 'creator';
-        }   
-        
-        $profile->save();
+        Profile::create([
+            'user_id' => $user->id,
+            'name' => $user->name,
+            'profile_type' => $input['user_type']
+        ]);
         
         return $user;
     }
