@@ -15,6 +15,18 @@ class SiteController extends Controller
         return view('static.home');
     }
 
+    public function static_about(Request $request) {
+        return view('static.about');
+    }    
+
+    public function static_brand(Request $request) {
+        return view('static.brands');
+    }
+
+    public function static_creator(Request $request) {
+        return view('static.creators');
+    }    
+
     public function show_support(Request $request) {
         return view('static.support');
     }   
@@ -27,11 +39,11 @@ class SiteController extends Controller
         return view('static.rewards');
     }       
 
-    public function show_privacy(Request $request) {
+    public function static_privacy(Request $request) {
         return view('static.privacy');
     }
 
-    public function show_terms(Request $request) {
+    public function static_terms(Request $request) {
         return view('static.terms');
     }
 
