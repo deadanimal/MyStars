@@ -6,6 +6,8 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UtilityController;
 
+Route::get('/@{username}', [ProfileController::class, 'show_profile']);
+
 Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', [SiteController::class, 'show_dashboard'])->name('dashboard');
@@ -21,8 +23,6 @@ Route::middleware('auth')->group(function () {
     Route::put('/tickets/{ticket_id}', [UtilityController::class, 'update_ticket']); 
 
     Route::get('/guides', [UtilityController::class, 'show_guides']);
-    Route::get('/guides/{guide_id}', [UtilityController::class, 'show_guide']);
-
-    Route::get('/@{username}', [ProfileController::class, 'show_profile']);
+    Route::get('/guides/{guide_id}', [UtilityController::class, 'show_guide']);    
 
 });
