@@ -10,7 +10,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', [SiteController::class, 'show_dashboard'])->name('dashboard');
 
-    Route::get('/profile', [ProfileController::class, 'show_profile']);    
+    Route::get('/profile', [ProfileController::class, 'show_own_profile']);    
     Route::put('/profile', [ProfileController::class, 'update_profile']);    
     Route::put('/profile/password', [ProfileController::class, 'update_password']);    
     Route::put('/profile/picture', [ProfileController::class, 'update_profile_picture']);           
@@ -23,6 +23,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/guides', [UtilityController::class, 'show_guides']);
     Route::get('/guides/{guide_id}', [UtilityController::class, 'show_guide']);
 
-    Route::get('/@{username}', [ProfileController::class, 'show_username']);
+    Route::get('/@{username}', [ProfileController::class, 'show_profile']);
 
 });

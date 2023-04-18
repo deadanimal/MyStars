@@ -17,7 +17,7 @@ class ProfileController extends Controller
             return view('profile-guest', compact('profile'));
         }
 
-        public function show_profile(Request $request) {
+        public function show_own_profile(Request $request) {
             $user = $request->user();
             $profile = $user->profile;
             $profile_id = $profile->id;
@@ -57,5 +57,12 @@ class ProfileController extends Controller
             Alert::success('Success', 'Profile picture has been updated');
             return back(); 
         }
+
+        public function show_profile(Request $request) {
+            $username = $request->route('username');
+            $profile = Profile::where('username', $username)->first();
+    
+            return view('app.profile', compact('profile'));
+        }           
 
 }

@@ -9,6 +9,10 @@
 
 
     <main class="-mt-32">
-        1 - 2 -3
+        @forelse($contents as $content)
+            {{ $content }} <br />
+        @empty
+            -
+        @endforelse
     </main>
 @endsection
