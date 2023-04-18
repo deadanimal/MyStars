@@ -1,5 +1,7 @@
 @extends('layouts.static')
 
 @section('content')
-ABOUT
+    @include('layouts.navbar-static')
+
+    about
 @endsection

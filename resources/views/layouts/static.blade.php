@@ -12,19 +12,11 @@
 </head>
 
 <body class="antialiased">
-
-    <div class="bg-white">
-
-        @if (Auth::user())
-            @include('layouts.navbar-auth')
-        @else
-            @include('layouts.navbar-deauth')
-        @endif
-
+    
         @yield('content')
 
         @include('layouts.footer')
-    </div>
+    
 
 </body>
 
