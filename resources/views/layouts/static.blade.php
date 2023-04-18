@@ -13,15 +13,18 @@
 
 <body class="antialiased">
 
-    @if(Auth::user())
-        @include('layouts.navbar-auth')
-    @else 
-        @include('layouts.navbar-deauth')
-    @endif
+    <div class="bg-white">
 
-    @yield('content')
+        @if (Auth::user())
+            @include('layouts.navbar-auth')
+        @else
+            @include('layouts.navbar-deauth')
+        @endif
 
-    @include('layouts.footer')
+        @yield('content')
+
+        @include('layouts.footer')
+    </div>
 
 </body>
 
