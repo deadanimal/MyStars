@@ -90,5 +90,6 @@ class TicketController extends Controller
         Alert::success('Success', 'Message has been sent.');
         
         return back();
-    }   
+    }  
+     
 }

@@ -35,7 +35,8 @@ class CampaignController extends Controller
             $campaigns = $campaign_controller->show_available_campaigns_to_user($user);
             
             return view('campaign.creator_list', compact('campaigns'));
-        }        
+        }     
+
     }
 
     public function show_campaign(Request $request) {
@@ -63,7 +64,8 @@ class CampaignController extends Controller
             $campaign = Campaign::find($id);
 
             return view('creator.campaign_detail', compact('campaign'));
-        }           
+        }    
+               
     } 
     
     public function show_create_campaign(Request $request) {
@@ -133,7 +135,7 @@ class CampaignController extends Controller
 
 
 
-    
+
 
     private function show_available_campaigns_to_user($user) {
         $campaigns = Campaign::all();
