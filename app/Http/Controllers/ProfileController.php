@@ -23,7 +23,7 @@ class ProfileController extends Controller
             $profile_id = $profile->id;
             $profile_type = $profile->profile_type;
 
-            return view('profile-auth', compact('profile'));
+            return view('utility.profile', compact('profile'));
         }
 
         public function update_profile(Request $request) {

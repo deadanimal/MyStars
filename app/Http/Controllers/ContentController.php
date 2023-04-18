@@ -18,13 +18,16 @@ class ContentController extends Controller
         
         if($profile_type == 'admin') {
             $contents = Content::all();
-            return view('admin.content_list', compact('contents'));
+
+            return view('content.admin_list', compact('contents'));
         } else if ($profile_type == 'brand') {
-            $contents = Content::all();
-            return view('brand.content_list', compact('contents'));            
+            $campaigns = Campaign::all();
+
+            return view('content.brand_list', compact('campaigns'));            
         } else {
             $contents = Content::where('creator_id', $profile_id)->get();
-            return view('creator.content_list', compact('contents'));
+
+            return view('content.creator_list', compact('contents'));
         }        
     }
 
@@ -79,6 +82,9 @@ class ContentController extends Controller
         $id = (int) $request->route('content_id');
         $content = Content::find($id);
 
+        Alert::success('Success', 'New content has been updated!');
+        
+        return back();
     }
 
 }

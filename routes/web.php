@@ -13,7 +13,6 @@ Route::stripeWebhooks('stripe-webhook');
 
 Route::middleware('auth')->group(function () {
         
-    Route::get('/analytics', [CampaignController::class, 'show_analytics']);
     Route::get('/wallet', [WalletController::class, 'show_wallet']);    
     Route::put('/wallet', [WalletController::class, 'update_wallet']); 
     Route::post('/wallet/cashouts', [WalletController::class, 'to_cashout']);   
@@ -27,3 +26,4 @@ require __DIR__.'/modules/static.php';
 require __DIR__.'/modules/utility.php';
 require __DIR__.'/modules/campaign.php';
 require __DIR__.'/modules/content.php';
+require __DIR__.'/modules/analytics.php';

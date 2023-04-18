@@ -4,8 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\ProfileController;
-
-
+use App\Http\Controllers\UtilityController;
 
 Route::middleware('auth')->group(function () {
 
@@ -16,13 +15,13 @@ Route::middleware('auth')->group(function () {
     Route::put('/profile/password', [ProfileController::class, 'update_password']);    
     Route::put('/profile/picture', [ProfileController::class, 'update_profile_picture']);           
 
-    Route::get('/tickets', [SiteController::class, 'show_tickets']);
-    Route::post('/tickets', [SiteController::class, 'create_ticket']);
-    Route::get('/tickets/{ticket_id}', [SiteController::class, 'show_ticket']);
-    Route::put('/tickets/{ticket_id}', [SiteController::class, 'update_ticket']); 
+    Route::get('/tickets', [UtilityController::class, 'show_tickets']);
+    Route::post('/tickets', [UtilityController::class, 'create_ticket']);
+    Route::get('/tickets/{ticket_id}', [UtilityController::class, 'show_ticket']);
+    Route::put('/tickets/{ticket_id}', [UtilityController::class, 'update_ticket']); 
 
-    Route::get('/guides', [SiteController::class, 'show_guides']);
-    Route::get('/guides/{guide_id}', [SiteController::class, 'show_guide']);
+    Route::get('/guides', [UtilityController::class, 'show_guides']);
+    Route::get('/guides/{guide_id}', [UtilityController::class, 'show_guide']);
 
     Route::get('/@{username}', [ProfileController::class, 'show_username']);
 

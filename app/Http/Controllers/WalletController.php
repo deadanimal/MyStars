@@ -14,20 +14,8 @@ class WalletController extends Controller
 
     public function show_wallet(Request $request) {
         $user = $request->user();
-
-        $wallet = Wallet::firstOrCreate(['user_id' => $user->id]);
-        
+        $wallet = Wallet::firstOrCreate(['user_id' => $user->id]);        
         return view('wallet', compact('user', 'wallet'));
-    }
-
-    public function show_invoices(Request $request) {
-        $user = $request->user();
-
-        if($user->user_type == 'brand') {
-            return redirect('https://billing.stripe.com/p/login/00gcPT5wmcZQfYIfYY');
-        } else {
-            
-        }
     }
 
     public function to_cashout(Request $request) {
@@ -87,6 +75,22 @@ class WalletController extends Controller
 
         return back();
     }     
+
+    public function billing(Request $request) {
+        $user = $request->user();
+        $user->createOrGetStripeCustomer();
+        return $request->user()->redirectToBillingPortal(route('dashboard'));        
+    }
+
+    public function buy_product(Request $request) {
+        $product_name = $request->product_name;
+        if($product_name == '1kc') {
+            $price_id = 'price_1MxrHXL56wwkJgEVj5dhmqa4';
+        } else if ($product_name == '10kc') {
+            $price_id = 'price_1MxrIEL56wwkJgEVvzBFQI7u';
+        }
+        return $request->user()->checkout($price_id);
+    }    
 
 
 }

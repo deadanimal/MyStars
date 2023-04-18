@@ -39,10 +39,23 @@ class CreateNewUser implements CreatesNewUsers
             'password' => Hash::make($input['password']),
         ]);
 
+        if($input['user_type'] == 'brand') {
+            $profile_type = 'brand';
+            $user
+                ->createAsStripeCustomer();
+            $user
+                ->newSubscription( 'prod_NjOaV3gBv8R4jK', 'price_1MxvnPDkcEnPJtipxoMumAib')
+                ->trialDays(14)
+                ->create();               
+        } else {
+            $profile_type = 'creator';
+        }
+        
+
         Profile::create([
             'user_id' => $user->id,
             'name' => $user->name,
-            'profile_type' => $input['user_type']
+            'profile_type' => $profile_type
         ]);
         
         return $user;

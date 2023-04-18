@@ -3,8 +3,7 @@
 @section('content')
     <div class="col-lg-9 pt-4 pb-2 pb-sm-4">
         <div class="d-flex align-items-center mb-4">
-            <h1 class="h2 mb-0">Campaign</h1>
-            <a class="btn btn-sm btn-outline-primary ms-auto" href="/campaigns?task=refresh"><i class="ai-refresh ms-n1 me-2"></i>New Campaigns?</a>
+            <h1 class="h2 mb-0">Content</h1>
         </div>
         <div class="card border-0 py-1 p-md-2 p-xl-3 p-xxl-4">
             <div class="card-body pb-4">
@@ -21,7 +20,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($campaigns as $campaign)
+                            @foreach ($contents as $content)
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>John</td>
@@ -33,7 +32,7 @@
                         </tbody>
                     </table>
                 </div>
-
+                
             </div>
         </div>
     </div>

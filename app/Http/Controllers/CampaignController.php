@@ -20,14 +20,21 @@ class CampaignController extends Controller
         $profile_type = $profile->profile_type;
         
         if($profile_type == 'admin') {
+            
             $campaings = Campaign::all();
-            return view('admin.campaign_list', compact('campaigns'));
+
+            return view('campaign.admin_list', compact('campaigns'));
         } else if ($profile_type == 'brand') {
+            
             $campaigns = Campaign::where('profile_id', $profile_id)->get();
+            
             return view('campaign.brand_list', compact('campaigns'));
         } else {
-            $campaings = Campaign::all();
-            return view('campaign.creator_list', compact('campaings'));
+            
+            $campaign_controller = new CampaignController();
+            $campaigns = $campaign_controller->show_available_campaigns_to_user($user);
+            
+            return view('campaign.creator_list', compact('campaigns'));
         }        
     }
 
@@ -39,16 +46,22 @@ class CampaignController extends Controller
         $id = (int) $request->route('campaign_id');        
 
         if($profile_type == 'admin') {
+
             $campaign = Campaign::find($id);
+
             return view('admin.campaign_detail', compact('campaign'));
         } else if ($profile_type == 'brand') {
+            
             $campaign = Campaign::where([
                 ['id', '=', $id],
                 ['user_id', '=', $user->id],
             ])->first();
+
             return view('brand.campaign_detail', compact('campaign'));
         } else {
+            
             $campaign = Campaign::find($id);
+
             return view('creator.campaign_detail', compact('campaign'));
         }           
     } 
@@ -76,12 +89,15 @@ class CampaignController extends Controller
             'profile_id' => $profile_id,
         ]);
 
-        foreach($request->file('attachments') as $attached_file) {
-            $campaign_attachment = New CampaignAttachment;
-            $campaign_attachment->link = $attached_file->store('mystars/campaign_attachment');
-            $campaign_attachment->campaign_id = $campaign->id;
-            $campaign_attachment->save();
-        }   
+        if($request->file('attachments')) {
+            foreach($request->file('attachments') as $attached_file) {
+                $campaign_attachment = New CampaignAttachment;
+                $campaign_attachment->link = $attached_file->store('mystars/campaign_attachment');
+                $campaign_attachment->campaign_id = $campaign->id;
+                $campaign_attachment->save();
+            }   
+
+        }
 
         Alert::success('Success', 'A new campaign has been created!');
 
@@ -115,20 +131,13 @@ class CampaignController extends Controller
         return back();
     }
 
-    public function show_analytics(Request $request) {
-        $user = $request->user();
-        $profile = $user->profile;
-        $profile_id = $profile->id;
-        $profile_type = $profile->profile_type;
 
-        if($profile_type == 'admin') {
-            return view('admin.analytics');
-        } else if ($profile_type == 'brand') {
 
-            return view('brand.analytics');
-        } else {
-            return view('creator.analytics');
-        }  
+    
+
+    private function show_available_campaigns_to_user($user) {
+        $campaigns = Campaign::all();
+        return $campaigns;
     }
 
 }

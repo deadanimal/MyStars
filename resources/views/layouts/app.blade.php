@@ -164,6 +164,9 @@
 
 <body class="bg-secondary">
 
+    @include('sweetalert::alert')
+
+
     <!-- Page wrapper-->
     <main class="page-wrapper">
         <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
