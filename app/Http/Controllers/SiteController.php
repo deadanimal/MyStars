@@ -71,14 +71,7 @@ class SiteController extends Controller
     } 
 
 
-    public function show_profile(Request $request) {
-        $user = $request->user();
-        $profile = $user->profile;
-        $profile_id = $profile->id;
-        $profile_type = $profile->profile_type;
 
-        return view('profile', compact('profile'));
-    }   
     
 
        
