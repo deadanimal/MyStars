@@ -1,10 +1,10 @@
-<nav class="bg-white shadow">
+<nav class="bg-gray-800 shadow" x-data="{ menuOpen: false }">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 justify-between">
             <div class="flex">
                 <div class="-ml-2 mr-2 flex items-center md:hidden">
                     <!-- Mobile menu button -->
-                    <button type="button"
+                    <button type="button" x-on:click="menuOpen = ! menuOpen"
                         class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                         aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -23,29 +23,39 @@
                 </div>
                 <div class="flex flex-shrink-0 items-center">
                     <a href="/dashboard">
-                        <img class="block h-8 w-auto lg:hidden"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
-                        <img class="hidden h-8 w-auto lg:block"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+                        <img class="block h-8 w-auto lg:hidden" src="/assets/img/logoipsum-264.svg" alt="Your Company">
+                        <img class="hidden h-8 w-auto lg:block" src="/assets/img/logoipsum-264.svg" alt="Your Company">
                     </a>
                 </div>
                 <div class="hidden md:ml-6 md:flex md:space-x-8">
 
                     @if (Auth::user()->profile->profile_type == 'admin')
+                        <a href="/admin/brands"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Brand</a>
+                        <a href="/admin/campaigns"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Campaign</a>
+                        <a href="/admin/contents"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Content</a>
+                        <a href="/admin/users"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">User</a>
                     @elseif (Auth::user()->profile->profile_type == 'brand')
-
+                        <a href="/campaigns"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Campaign</a>
+                        <a href="/contents"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Content</a>
                     @elseif (Auth::user()->profile->profile_type == 'creator')
-
+                        <a href="/contents"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Content</a>
                     @elseif (Auth::user()->profile->profile_type == 'manager')
+                        <a href="/staff/brands"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Brand</a>
+                        <a href="/staff/campaigns"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Campaign</a>
+                        <a href="/staff/contents"
+                            class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Content</a>
                     @endif
 
 
-
-
-                    <a href="/campaigns"
-                        class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Campaign</a>
-                    <a href="/contents"
-                        class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Content</a>
                 </div>
             </div>
             <div class="flex items-center">
@@ -54,20 +64,19 @@
 
                     @if (Auth::user()->profile->profile_type == 'admin')
                     @elseif (Auth::user()->profile->profile_type == 'brand')
-
+                        <button type="button"
+                            class="relative inline-flex items-center gap-x-1.5 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            New Campaign
+                        </button>
                     @elseif (Auth::user()->profile->profile_type == 'creator')
-
+                        <button type="button"
+                            class="relative inline-flex items-center gap-x-1.5 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Explore
+                        </button>
                     @elseif (Auth::user()->profile->profile_type == 'manager')
                     @endif
 
-                    <button type="button"
-                        class="relative inline-flex items-center gap-x-1.5 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                        New Campaign
-                    </button>
-                    <button type="button"
-                        class="relative inline-flex items-center gap-x-1.5 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                        Explore
-                    </button>
+
                 </div>
                 <div class="hidden md:ml-4 md:flex md:flex-shrink-0 md:items-center">
 
@@ -135,7 +144,7 @@
             <a href="#"
                 class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6">Calendar</a> --}}
         </div>
-        <div class="border-t border-gray-200 pb-3 pt-4">
+        <div class="border-t border-gray-200 pb-3 pt-4" x-show="menuOpen">
             <div class="flex items-center px-4 sm:px-6">
                 <div class="flex-shrink-0">
                     <img class="h-10 w-10 rounded-full"
@@ -146,15 +155,6 @@
                     <div class="text-base font-medium text-gray-800">{{ Auth::user()->name }}</div>
                     <div class="text-sm font-medium text-gray-500">{{ Auth::user()->email }}</div>
                 </div>
-                <button type="button"
-                    class="ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                    <span class="sr-only">View notifications</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-                    </svg>
-                </button>
             </div>
             <div class="mt-3 space-y-1">
                 <a href="/profile"
@@ -164,16 +164,13 @@
 
                 @if (Auth::user()->profile->profile_type == 'admin')
                 @elseif (Auth::user()->profile->profile_type == 'brand')
-
+                    <a href="/billing"
+                        class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6">Billing</a>
                 @elseif (Auth::user()->profile->profile_type == 'creator')
-
+                    <a href="/wallet"
+                        class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6">Wallet</a>
                 @elseif (Auth::user()->profile->profile_type == 'manager')
                 @endif
-
-                <a href="/billing"
-                    class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6">Billing</a>
-                <a href="/wallet"
-                    class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6">Wallet</a>
                 <form action="/logout" method="POST">
                     @csrf
                     <button

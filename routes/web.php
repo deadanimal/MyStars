@@ -16,11 +16,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/wallet', [WalletController::class, 'show_wallet']);    
     Route::put('/wallet', [WalletController::class, 'update_wallet']); 
     Route::post('/wallet/cashouts', [WalletController::class, 'to_cashout']);   
-    Route::get('/invoices', [WalletController::class, 'show_invoices']);    
-    Route::get('/admin', [SiteController::class, 'show_admin_dashboard']);
     Route::post('earnings', [WalletController::class, 'approve_earning']);
 
 });
+
+require __DIR__.'/modules/admin.php';
+require __DIR__.'/modules/staff.php';
 
 require __DIR__.'/modules/wallet.php';
 require __DIR__.'/modules/static.php';

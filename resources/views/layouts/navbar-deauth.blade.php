@@ -32,9 +32,9 @@
                 <div class="flex flex-shrink-0 items-center">
                     <a href="/dashboard">
                     <img class="block h-8 w-auto lg:hidden"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+                        src="/assets/img/logoipsum-264.svg" alt="Your Company">
                     <img class="hidden h-8 w-auto lg:block"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+                        src="/assets/img/logoipsum-264.svg" alt="Your Company">
                     </a>
                 </div>
                 <div class="hidden md:ml-6 md:flex md:space-x-8">

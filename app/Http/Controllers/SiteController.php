@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Guide;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 use RealRashid\SweetAlert\Facades\Alert;
@@ -77,7 +78,8 @@ class SiteController extends Controller
         $profile_type = $profile->profile_type;
 
         return view('profile', compact('profile'));
-    }    
+    }   
+    
 
        
 

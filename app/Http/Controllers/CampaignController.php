@@ -19,17 +19,12 @@ class CampaignController extends Controller
         $profile_id = $profile->id;
         $profile_type = $profile->profile_type;
         
-        if($profile_type == 'admin') {
-            
-            $campaings = Campaign::all();
-
-            return view('campaign.admin_list', compact('campaigns'));
-        } else if ($profile_type == 'brand') {
+        if ($profile_type == 'brand') {
             
             $campaigns = Campaign::where('profile_id', $profile_id)->get();
             
             return view('campaign.brand_list', compact('campaigns'));
-        } else {
+        } else if ($profile_type == 'creator')  {
             
             $campaign_controller = new CampaignController();
             $campaigns = $campaign_controller->show_available_campaigns_to_user($user);
@@ -65,7 +60,7 @@ class CampaignController extends Controller
 
             return view('creator.campaign_detail', compact('campaign'));
         }    
-               
+
     } 
     
     public function show_create_campaign(Request $request) {
