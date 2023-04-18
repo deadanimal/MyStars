@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div>
+
         <header class="py-10 ">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-3">
                 <h1 class="text-3xl font-bold tracking-tight">List of Users</h1>
@@ -9,7 +9,7 @@
         </header>
 
 
-        <main class="-mt-32">
+        <main>
             <div class="px-4 sm:px-6 lg:px-8">
                 <div class="sm:flex sm:items-center">
                     <div class="sm:flex-auto">
@@ -56,7 +56,7 @@
                                                     {{ $user->profile->profile_type }}
                                                 </td>
                                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                                    {{ $user->email }}    
+                                                    {{ $user->email }}
                                                 </td>
                                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                                     -
@@ -79,7 +79,6 @@
                     </div>
                 </div>
             </div>
-
         </main>
-    </div>
+    
 @endsection

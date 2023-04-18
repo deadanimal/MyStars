@@ -1,4 +1,4 @@
-<nav class="bg-gray-800 shadow" x-data="{ menuOpen: false }">
+<nav class="shadow" x-data="{ menuOpen: false }">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 justify-between">
             <div class="flex">
