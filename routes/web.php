@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
 
 });
 
+require __DIR__.'/modules/wallet.php';
 require __DIR__.'/modules/static.php';
 require __DIR__.'/modules/utility.php';
 require __DIR__.'/modules/campaign.php';

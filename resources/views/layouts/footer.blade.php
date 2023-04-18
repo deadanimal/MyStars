@@ -5,7 +5,7 @@
             <div class="pb-6">
                 <a href="/" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Home</a>
             </div>
-                        
+
             <div class="pb-6">
                 <a href="/about" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
             </div>
@@ -55,8 +55,10 @@
 
             <a href="https://tiktok.com/MyLifebook" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Tiktok</span>
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
                 </svg>
             </a>
 
@@ -69,7 +71,8 @@
                 </svg>
             </a>
         </div>
-        <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2023 DCB Platform Limited. All rights reserved.
+        <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2023 DCB Platform Limited. All rights
+            reserved.
         </p>
     </div>
 </footer>

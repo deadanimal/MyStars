@@ -58,21 +58,17 @@ class SiteController extends Controller
         $profile_type = $profile->profile_type;
         
         if ($profile->profile_type == 'admin') {
-            return redirect('/admin');
-        } else {
-            return redirect('/campaigns');
+            return view('app.admin_dashboard');
+        } else if ($profile->profile_type == 'brand') {
+            return view('app.brand_dashboard');
+        } else if ($profile->profile_type == 'creator') {
+            return view('app.creator_dashboard');
+        } else if ($profile->profile_type == 'manager') {
+            return view('app.manager_dashboard');
         }
         
     } 
 
-    public function show_admin_dashboard(Request $request) {
-        $user = $request->user();
-        $profile = $user->profile;
-        $profile_id = $profile->id;
-        $profile_type = $profile->profile_type;
-
-        return view('dashboard');
-    }     
 
     public function show_profile(Request $request) {
         $user = $request->user();

@@ -8,7 +8,7 @@ use App\Http\Controllers\UtilityController;
 
 Route::middleware('auth')->group(function () {
 
-    Route::get('/dashboard', [SiteController::class, 'show_dashboard']);
+    Route::get('/dashboard', [SiteController::class, 'show_dashboard'])->name('dashboard');
 
     Route::get('/profile', [ProfileController::class, 'show_profile']);    
     Route::put('/profile', [ProfileController::class, 'update_profile']);    

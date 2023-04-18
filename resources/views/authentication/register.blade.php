@@ -20,7 +20,7 @@
                     <div>
                         <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
                         <div class="mt-2">
-                            <input id="name" name="name" type="name" autocomplete="name" required
+                            <input id="name" name="name" type="text" autocomplete="name" required
                                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         </div>
                     </div>
@@ -43,11 +43,11 @@
                     </div>
 
                     <div>
-                        <label for="confirm_password" class="block text-sm font-medium leading-6 text-gray-900">Confirm
+                        <label for="password_confirmation" class="block text-sm font-medium leading-6 text-gray-900">Confirm
                             Password</label>
                         <div class="mt-2">
-                            <input id="confirm_password" name="confirm_password" type="password"
-                                autocomplete="confirm_password" required
+                            <input id="password_confirmation" name="password_confirmation" type="password"
+                                autocomplete="password_confirmation" required
                                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         </div>
                     </div>
@@ -69,3 +69,20 @@
         </div>
     </div>
 @endsection
+
+
+{{-- <div class="password-toggle mb-4">
+    <input class="form-control form-control-lg" type="password" placeholder="Confirm password"
+        name="password_confirmation" required>
+    <label class="password-toggle-btn" aria-label="Show/hide password">
+        <input class="password-toggle-check" type="checkbox"><span
+            class="password-toggle-indicator"></span>
+    </label>
+</div>
+<div class="pb-4">
+    <div class="form-check my-2">
+        <input class="form-check-input" type="checkbox" id="terms" name="terms">
+        <label class="form-check-label ms-1" for="terms">I agree to <a href="/terms">Terms
+                &amp; Conditions</a></label>
+    </div>
+</div> --}}
