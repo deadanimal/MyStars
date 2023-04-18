@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.static')
 
 @section('content')
 <header class="py-10 ">
