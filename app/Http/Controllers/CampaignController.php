@@ -13,7 +13,7 @@ use App\Models\Content;
 class CampaignController extends Controller
 {
 
-    public function show_campaigns(Request $request) {
+    public function list_campaigns(Request $request) {
         $user = $request->user();
         $profile = $user->profile;
         $profile_id = $profile->id;
@@ -128,13 +128,20 @@ class CampaignController extends Controller
         return back();
     }
 
-
-
-
-
     private function show_available_campaigns_to_user($user) {
         $campaigns = Campaign::all();
         return $campaigns;
+    }
+
+    public function explore_campaigns(Request $request) {
+        
+        $user = $request->user();
+        $profile = $user->profile;
+        $profile_id = $profile->id;
+        $profile_type = $profile->profile_type;
+
+        $campaigns = Campaign::all();
+        return view('campaign.creator_explore', compact('campaigns'));
     }
 
 }

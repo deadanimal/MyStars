@@ -12,7 +12,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 class SiteController extends Controller
 {
 
-    public function show_home(Request $request) {
+    public function static_home(Request $request) {
         return view('static.home');
     }
 
@@ -27,18 +27,6 @@ class SiteController extends Controller
     public function static_creator(Request $request) {
         return view('static.creators');
     }    
-
-    public function show_support(Request $request) {
-        return view('static.support');
-    }   
-    
-    public function show_services(Request $request) {
-        return view('static.services');
-    }   
-
-    public function show_rewards(Request $request) {
-        return view('static.rewards');
-    }       
 
     public function static_privacy(Request $request) {
         return view('static.privacy');

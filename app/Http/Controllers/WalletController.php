@@ -14,8 +14,8 @@ class WalletController extends Controller
 
     public function show_wallet(Request $request) {
         $user = $request->user();
-        $wallet = Wallet::firstOrCreate(['user_id' => $user->id]);        
-        return view('wallet', compact('user', 'wallet'));
+        $wallet = Wallet::firstOrCreate(['profile_id' => $user->profile->id]);        
+        return view('app.wallet', compact('user', 'wallet'));
     }
 
     public function to_cashout(Request $request) {

@@ -20,12 +20,12 @@ Route::middleware('auth')->group(function () {
 
 });
 
-require __DIR__.'/modules/admin.php';
-require __DIR__.'/modules/staff.php';
+require __DIR__.'/web/admin.php';
+require __DIR__.'/web/staff.php';
 
-require __DIR__.'/modules/wallet.php';
-require __DIR__.'/modules/static.php';
-require __DIR__.'/modules/utility.php';
-require __DIR__.'/modules/campaign.php';
-require __DIR__.'/modules/content.php';
-require __DIR__.'/modules/analytics.php';
+require __DIR__.'/web/wallet.php';
+require __DIR__.'/web/static.php';
+require __DIR__.'/web/utility.php';
+require __DIR__.'/web/campaign.php';
+require __DIR__.'/web/content.php';
+require __DIR__.'/web/analytics.php';
