@@ -3,8 +3,7 @@
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="/assets/img/logoipsum-264.svg"
-                    alt="">
+                <img class="h-8 w-auto" src="/assets/img/logoipsum-264.svg" alt="">
             </a>
         </div>
         <div class="flex lg:hidden">
@@ -19,13 +18,14 @@
             </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
 
-            <a href="/brands" class="text-sm font-semibold leading-6 text-gray-900">Content Platform</a>
+            <a href="/brands" class="text-sm font-semibold leading-6 text-gray-900">For Brand</a>
 
-            <a href="/brands-concierge" class="text-sm font-semibold leading-6 text-gray-900">Concierge Service</a>
+            <a href="/creators" class="text-sm font-semibold leading-6 text-gray-900">For Creator</a>
 
-            <a href="/creators" class="text-sm font-semibold leading-6 text-gray-900">Make Money</a>
+            <a href="/concierges" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
+
+
 
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -42,8 +42,7 @@
             <div class="flex items-center justify-between">
                 <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">My Stars</span>
-                    <img class="h-8 w-auto" src=/assets/img/logoipsum-264.svg"
-                        alt="">
+                    <img class="h-8 w-auto" src="/assets/img/logoipsum-264.svg" alt="">
                 </a>
                 <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                     <span class="sr-only">Close menu</span>
@@ -56,16 +55,21 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
-                        <a href="/about"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
 
                         <a href="/brands"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Brand</a>
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">For
+                            Brand</a>
 
                         <a href="/creators"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Creator</a>
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">For
+                            Creator</a>
 
-         
+
+                        <a href="/concierges"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">For
+                            Services</a>
+
+
                     </div>
                     <div class="py-6">
                         <a href="/dashboard"

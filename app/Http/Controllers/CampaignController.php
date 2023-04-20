@@ -14,6 +14,7 @@ class CampaignController extends Controller
 {
 
     public function list_campaigns(Request $request) {
+        
         $user = $request->user();
         $profile = $user->profile;
         $profile_id = $profile->id;

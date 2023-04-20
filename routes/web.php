@@ -23,6 +23,9 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/web/admin.php';
 require __DIR__.'/web/staff.php';
 
+require __DIR__.'/web/challenge.php';
+require __DIR__.'/web/submission.php';
+
 require __DIR__.'/web/wallet.php';
 require __DIR__.'/web/static.php';
 require __DIR__.'/web/utility.php';

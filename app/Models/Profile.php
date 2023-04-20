@@ -15,6 +15,7 @@ class Profile extends Model
         'profile_type',
         'profile_picture',
         'user_id',
+        'status'
     ];      
 
     public function user()
