@@ -51,7 +51,7 @@ class ChallengeController extends Controller
         
         if ($profile->profile_type == 'admin' || 
             $profile->profile_type == 'staff' ||
-            $profile->profile_type == 'brand') {
+            $profile->profile_type == 'brand' ) {
         
             return view('challenge.viewform');
 
