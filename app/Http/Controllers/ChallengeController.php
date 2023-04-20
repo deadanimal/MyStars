@@ -53,7 +53,7 @@ class ChallengeController extends Controller
             $profile->profile_type == 'staff' ||
             $profile->profile_type == 'brand') {
         
-            return view('challenges.viewform');
+            return view('challenge.viewform');
 
         } else {
             return back();
@@ -73,7 +73,7 @@ class ChallengeController extends Controller
                 ['id', '>', 0]
             ])->get();
 
-            return view('challenges.staff_list', compact('challenges'));
+            return view('challenge.staff_list', compact('challenges'));
 
         } else if ($profile->profile_type == 'brand') {
 
@@ -81,7 +81,7 @@ class ChallengeController extends Controller
                 ['brand_id', '=', $profile_id]
             ])->get();
 
-            return view('challenges.brand_list', compact('challenges'));
+            return view('challenge.brand_list', compact('challenges'));
 
         } else {
             return back();
@@ -101,7 +101,7 @@ class ChallengeController extends Controller
             ['status', '=', 'Active']
         ])->get();
 
-        return view('challenges.creator_list', compact('challenges'));
+        return view('challenge.creator_list', compact('challenges'));
     }
 
     public function detail_challenge(Request $request) {
@@ -117,7 +117,7 @@ class ChallengeController extends Controller
                 ['id', '=', $id]
             ])->first();
 
-            return view('challenges.staff_detail', compact('challenge'));
+            return view('challenge.staff_detail', compact('challenge'));
 
         } else if ($profile->profile_type == 'brand') {
 
@@ -126,7 +126,7 @@ class ChallengeController extends Controller
                 ['brand_id', '=', $profile_id]
             ])->first();
 
-            return view('challenges.brand_detail', compact('challenge'));
+            return view('challenge.brand_detail', compact('challenge'));
 
         } else if ($profile->profile_type == 'creator') {
             
@@ -134,7 +134,7 @@ class ChallengeController extends Controller
                 ['id', '=', $id],
             ])->first();
 
-            return view('challenges.creator_detail', compact('challenge'));
+            return view('challenge.creator_detail', compact('challenge'));
 
         } else  {            
             return back();

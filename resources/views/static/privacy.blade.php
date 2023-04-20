@@ -6,99 +6,154 @@
 
     <div class="bg-white px-6 py-32 lg:px-8">
         <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-            <p class="text-base font-semibold leading-7 text-indigo-600">Introducing</p>
-            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">JavaScript for Beginners</h1>
-            <p class="mt-6 text-xl leading-8">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit
-                dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra
-                scelerisque eget. Eleifend egestas fringilla sapien.</p>
-            <div class="mt-10 max-w-2xl">
-                <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                    vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                    erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                    semper sed amet vitae sed turpis id.</p>
-                <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-                    <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
-                            aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900">Data types.</strong> Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                            blanditiis ratione.</span>
-                    </li>
-                    <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
-                            aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900">Loops.</strong> Anim aute id magna aliqua ad ad
-                            non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
-                    </li>
-                    <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
-                            aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900">Events.</strong> Ac tincidunt sapien vehicula erat
-                            auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
-                    </li>
-                </ul>
-                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit
-                    molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et
-                    ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">From beginner to expert in 3 hours</h2>
-                <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu
-                    ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                    pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam
-                    sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
-                <figure class="mt-10 border-l border-indigo-600 pl-9">
-                    <blockquote class="font-semibold text-gray-900">
-                        <p>“Vel ultricies morbi odio facilisi ultrices accumsan donec lacus purus. Lectus nibh ullamcorper
-                            ac dictum justo in euismod. Risus aenean ut elit massa. In amet aliquet eget cras. Sem volutpat
-                            enim tristique.”</p>
-                    </blockquote>
-                    <figcaption class="mt-6 flex gap-x-4">
-                        <img class="h-6 w-6 flex-none rounded-full bg-gray-50"
-                            src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                            alt="">
-                        <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Maria Hill</strong> –
-                            Marketing Manager</div>
-                    </figcaption>
-                </figure>
-                <p class="mt-10">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                    semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                    varius sit neque erat velit.</p>
-            </div>
-            <figure class="mt-16">
-                <img class="aspect-video rounded-xl bg-gray-50 object-cover"
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
-                    alt="">
-                <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
-                    <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor"
-                        aria-hidden="true">
-                        <path fill-rule="evenodd"
-                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    Faucibus commodo massa rhoncus, volutpat.
-                </figcaption>
-            </figure>
+            <p class="text-base font-semibold leading-7 text-indigo-600">Effective: 20 April 2023</p>
+            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Privacy Policy for DCB Platform
+                Limited</h1>
+
             <div class="mt-16 max-w-2xl">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Everything you need to get up and running</h2>
-                <p class="mt-6">Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam varius orci dapibus
-                    volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra
-                    ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor
-                    venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
-                <p class="mt-8">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                    semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                    varius sit neque erat velit.</p>
+                <p class="mt-6">At My Stars, accessible from https://stars.my, one of our main priorities is the privacy of
+                    our visitors. This Privacy Policy document contains types of information that is collected and recorded
+                    by My Stars and how we use it.</p>
+
+                <p class="mt-6">If you have additional questions or require more information about our Privacy Policy, do
+                    not hesitate to contact us.</p>
+
+                <p class="mt-6">This Privacy Policy applies only to our online activities and is valid for visitors to our
+                    website with regards to the information that they shared and/or collect in My Stars. This policy is not
+                    applicable to any information collected offline or via channels other than this website.</p>
+            </div>
+
+            <div class="mt-16 max-w-2xl">
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Consent</h2>
+                <p class="mt-6">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+            </div>
+
+            <div class="mt-16 max-w-2xl">
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Information we collect</h2>
+
+                <p class="mt-6">The personal information that you are asked to provide, and the reasons why you are asked
+                    to provide it,
+                    will be made clear to you at the point we ask you to provide your personal information.</p>
+                <p class="mt-6">If you contact us directly, we may receive additional information about you such as your
+                    name, email
+                    address, phone number, the contents of the message and/or attachments you may send us, and any other
+                    information you may choose to provide.</p>
+                <p class="mt-6">When you register for an Account, we may ask for your contact information, including items
+                    such as name,
+                    company name, address, email address, and telephone number.</p>
+            </div>
+
+            <div class="mt-16 max-w-2xl">
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900">How we use your information</h2>
+
+                <p class="mt-6">We use the information we collect in various ways, including to:</p>
+                <ul class="list-disc">
+                    <li>Provide, operate, and maintain our website</li>
+                    <li>Improve, personalize, and expand our website</li>
+                    <li>Understand and analyze how you use our website</li>
+                    <li>Develop new products, services, features, and functionality</li>
+                    <li>Communicate with you, either directly or through one of our partners, including for customer
+                        service, to provide
+                        you with updates and other information relating to the website, and for marketing and promotional
+                        purposes</li>
+                    <li>Send you emails</li>
+                    <li>Find and prevent fraud</li>
+                </ul>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+    <h2>Log Files</h2>
+
+    <p>My Stars follows a standard procedure of using log files. These files log visitors when they visit websites. All
+        hosting companies do this and a part of hosting services' analytics. The information collected by log files include
+        internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit
+        pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable.
+        The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the
+        website, and gathering demographic information.</p>
+
+
+
+
+    <h2>Cookies and Web Beacons</h2>
+    <p>Like any other website, My Stars uses "cookies". These cookies are used to store information including visitors'
+        preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize
+        the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+    </p>
+
+
+
+    <h2>Advertising Partners Privacy Policies</h2>
+    <P>You may consult this list to find the Privacy Policy for each of the advertising partners of My Stars.</p>
+    <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in
+        their respective advertisements and links that appear on My Stars, which are sent directly to users' browser. They
+        automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of
+        their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+    </p>
+
+    <p>Note that My Stars has no access to or control over these cookies that are used by third-party advertisers.</p>
+
+    <h2>Third Party Privacy Policies</h2>
+
+    <p>My Stars's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the
+        respective Privacy Policies of these third-party ad servers for more detailed information. It may include their
+        practices and instructions about how to opt-out of certain options. </p>
+
+    <p>You can choose to disable cookies through your individual browser options. To know more detailed information about
+        cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+
+    <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+
+    <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+    <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of
+        personal data that a business has collected about consumers.</p>
+    <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+    <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
+    <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please
+        contact us.</p>
+
+    <h2>GDPR Data Protection Rights</h2>
+
+    <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the
+        following:</p>
+    <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for
+        this service.</p>
+    <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate.
+        You also have the right to request that we complete the information you believe is incomplete.</p>
+    <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+    <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal
+        data, under certain conditions.</p>
+    <p>The right to object to processing – You have the right to object to our processing of your personal data, under
+        certain conditions.</p>
+    <p>The right to data portability – You have the right to request that we transfer the data that we have collected to
+        another organization, or directly to you, under certain conditions.</p>
+    <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please
+        contact us.</p>
+
+    <h2>Children's Information</h2>
+
+    <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and
+        guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+
+    <p>My Stars does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you
+        think that your child provided this kind of information on our website, we strongly encourage you to contact us
+        immediately and we will do our best efforts to promptly remove such information from our records.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+
+    <p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any
+        changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are
+        effective immediately, after they are posted on this page.</p>
+
+
+
+    <h2>Contact Us</h2>
+
+    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
 @endsection
