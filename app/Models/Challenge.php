@@ -16,7 +16,7 @@ class Challenge extends Model
         'platform',
         'platform_content_type',
         'creative_direction',
-        'brand_direction',
+        'brand_description',
         'geography',
         'audience',
         'brand_id'

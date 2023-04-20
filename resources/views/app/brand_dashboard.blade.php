@@ -10,10 +10,12 @@
 
 <main>
 
-    3 new videos to explore... <br/>
-    recent 3 challenges performance <br/>    
-    peformances for the last three months <br/>
-    
+    @foreach($suggestion_challenges as $challenge)
+    @endforeach
 
+    @foreach($recent_challenges as $challenge)
+    @endforeach
+    
 </main>
+
 @endsection

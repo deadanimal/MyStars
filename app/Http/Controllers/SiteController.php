@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Challenge;
 use App\Models\Guide;
+use App\Models\Submission;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -49,9 +51,22 @@ class SiteController extends Controller
         if ($profile->profile_type == 'admin') {
             return view('app.admin_dashboard');
         } else if ($profile->profile_type == 'brand') {
-            return view('app.brand_dashboard');
+            
+            $suggestion_challenges = Challenge::all();
+            $recent_challenges = Challenge::all();
+
+            return view('app.brand_dashboard', compact([
+                'suggestion_challenges', 'recent_challenges'
+            ]));
+
         } else if ($profile->profile_type == 'creator') {
-            return view('app.creator_dashboard');
+            
+            $explore_challenges = Challenge::all();
+            $recent_submissions = Submission::all();
+            return view('app.creator_dashboard', compact([
+                'explore_challenges', 'recent_submissions'
+            ]));
+
         } else if ($profile->profile_type == 'manager') {
             return view('app.manager_dashboard');
         }

@@ -34,7 +34,7 @@ class ChallengeController extends Controller
             'platform' => $request->platform,
             'platform_content_type' => $request->platform_content_type,
             'creative_direction' => $request->creative_direction,
-            'brand_direction' => $request->brand_direction,
+            'brand_description' => $request->brand_description,
             'geography' => $request->geography,
             'audience' => $request->audience,
             'brand_id' => $profile_id
