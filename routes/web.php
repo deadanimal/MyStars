@@ -28,4 +28,5 @@ require __DIR__.'/web/static.php';
 require __DIR__.'/web/utility.php';
 require __DIR__.'/web/campaign.php';
 require __DIR__.'/web/content.php';
+require __DIR__.'/web/concierge.php';
 require __DIR__.'/web/analytics.php';

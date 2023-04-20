@@ -17,4 +17,6 @@ Route::middleware('staffAccess')->prefix('staff')->group(function () {
     Route::get('/campaigns/{campaign_id}', [StaffController::class, 'detail_campaign']);
     Route::get('/contents/{content_id}', [StaffController::class, 'detail_content']);
 
+    Route::get('/concierge', [ConciergeController::class, 'dashboard_staff_concierge']);
+
 });

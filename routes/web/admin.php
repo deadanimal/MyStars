@@ -16,4 +16,5 @@ Route::middleware('adminAccess')->prefix('admin')->group(function () {
     Route::get('/users/{user_id}', [AdminController::class, 'detail_user']);
     Route::put('/users/{user_id}', [AdminController::class, 'update_user']);
 
+    Route::get('/concierge', [ConciergeController::class, 'dashboard_admin_concierge']);
 });

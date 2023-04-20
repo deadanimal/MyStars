@@ -21,9 +21,11 @@
         <div class="hidden lg:flex lg:gap-x-12">
             <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
 
-            <a href="/brands" class="text-sm font-semibold leading-6 text-gray-900">Brand</a>
+            <a href="/brands" class="text-sm font-semibold leading-6 text-gray-900">Content Platform</a>
 
-            <a href="/creators" class="text-sm font-semibold leading-6 text-gray-900">Creator</a>
+            <a href="/brands-concierge" class="text-sm font-semibold leading-6 text-gray-900">Concierge Service</a>
+
+            <a href="/creators" class="text-sm font-semibold leading-6 text-gray-900">Make Money</a>
 
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
