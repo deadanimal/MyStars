@@ -8,7 +8,7 @@
 </header>
 
 
-<main class="-mt-32">
+<main>
     {{$profile}} <br/>
     {{$profile->user}}
 </main>

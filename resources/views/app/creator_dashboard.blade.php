@@ -8,6 +8,12 @@
 </header>
 
 
-<main class="-mt-32">
+<main>
+
+    9 new videos to explore <br/>
+    recent 3 submissions performance <br/>
+    income for the last three months <br/>
+
+
 </main>
 @endsection

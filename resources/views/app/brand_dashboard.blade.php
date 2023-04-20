@@ -8,6 +8,12 @@
 </header>
 
 
-<main class="-mt-32">
+<main>
+
+    3 new videos to explore... <br/>
+    recent 3 challenges performance <br/>    
+    peformances for the last three months <br/>
+    
+
 </main>
 @endsection

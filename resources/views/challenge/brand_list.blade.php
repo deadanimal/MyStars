@@ -8,6 +8,9 @@
 </header>
 
 
-<main class="-mt-32">
+<main>
+    list of challenges <br/>
+    create challenge <br/>    
+    peformances for the last three months <br/>
 </main>
 @endsection
