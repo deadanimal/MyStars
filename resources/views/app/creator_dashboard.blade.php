@@ -10,9 +10,11 @@
 
     <main>
 
+        $explore_challenges
         @foreach($explore_challenges as $challenge)
         @endforeach
 
+        $recent_submissions
         @foreach($recent_submissions as $submission)
         @endforeach
 

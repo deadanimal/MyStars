@@ -10,9 +10,11 @@
 
 <main>
 
+    $suggestion_challenges
     @foreach($suggestion_challenges as $challenge)
     @endforeach
 
+    $recent_challenges
     @foreach($recent_challenges as $challenge)
     @endforeach
     

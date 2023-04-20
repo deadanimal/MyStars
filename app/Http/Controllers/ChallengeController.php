@@ -101,7 +101,7 @@ class ChallengeController extends Controller
             ['status', '=', 'Active']
         ])->get();
 
-        return view('challenge.creator_list', compact('challenges'));
+        return view('challenge.creator_explore', compact('challenges'));
     }
 
     public function detail_challenge(Request $request) {
