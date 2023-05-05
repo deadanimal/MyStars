@@ -7,18 +7,6 @@
             </div>
 
             <div class="pb-6">
-                <a href="/about" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
-            </div>
-
-            <div class="pb-6">
-                <a href="/brands" class="text-sm leading-6 text-gray-600 hover:text-gray-900">For Brand</a>
-            </div>
-
-            <div class="pb-6">
-                <a href="/creators" class="text-sm leading-6 text-gray-600 hover:text-gray-900">For Creator</a>
-            </div>
-
-            <div class="pb-6">
                 <a href="/terms" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms</a>
             </div>
 

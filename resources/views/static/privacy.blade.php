@@ -1,159 +1,65 @@
 @extends('layouts.static')
 
 @section('content')
-    @include('layouts.navbar-static')
+
+<div class="bg-white px-6 py-32 lg:px-8">
+    <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+        <p class="text-base font-semibold leading-7 text-indigo-600">Effective: 20 April 2023</p>
+        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Privacy Policy</h1>
+
+        <div class="mt-16 max-w-2xl">
+            <p class="mt-6">
+                My Stars website is owned by DCB Platform Limited, which is a data controller of your personal data.
+
+                We have adopted this Privacy Policy, which determines how we are processing the information collected by My Stars, which also provides the reasons why we must collect certain personal data about you. Therefore, you must read this Privacy Policy before using My Stars website.
+                
+                We take care of your personal data and undertake to guarantee its confidentiality and security.
+                
+                Personal information we collect:
+                When you visit the My Stars, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the installed cookies on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products you view, what websites or search terms referred you to the Site, and how you interact with the Site. We refer to this automatically-collected information as “Device Information.” Moreover, we might collect the personal data you provide to us (including but not limited to Name, Surname, Address, payment information, etc.) during registration to be able to fulfill the agreement.
+                
+                Why do we process your data?
+                Our top priority is customer data security, and, as such, we may process only minimal user data, only as much as it is absolutely necessary to maintain the website. Information collected automatically is used only to identify potential cases of abuse and establish statistical information regarding website usage. This statistical information is not otherwise aggregated in such a way that it would identify any particular user of the system.
+                
+                You can visit the website without telling us who you are or revealing any information, by which someone could identify you as a specific, identifiable individual. If, however, you wish to use some of the website’s features, or you wish to receive our newsletter or provide other details by filling a form, you may provide personal data to us, such as your email, first name, last name, city of residence, organization, telephone number. You can choose not to provide us with your personal data, but then you may not be able to take advantage of some of the website’s features. For example, you won’t be able to receive our Newsletter or contact us directly from the website. Users who are uncertain about what information is mandatory are welcome to contact us via legal@stars.my.
+                
+                Your rights:
+                If you are a European resident, you have the following rights related to your personal data:
+                
+                The right to be informed.
+                The right of access.
+                The right to rectification.
+                The right to erasure.
+                The right to restrict processing.
+                The right to data portability.
+                The right to object.
+                Rights in relation to automated decision-making and profiling.
+                If you would like to exercise this right, please contact us through the contact information below.
+                
+                Additionally, if you are a European resident, we note that we are processing your information in order to fulfill contracts we might have with you (for example, if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Additionally, please note that your information might be transferred outside of Europe, including Canada and the United States.
+                
+                Links to other websites:
+                Our website may contain links to other websites that are not owned or controlled by us. Please be aware that we are not responsible for such other websites or third parties' privacy practices. We encourage you to be aware when you leave our website and read the privacy statements of each website that may collect personal information.
+                
+                Information security:
+                We secure information you provide on computer servers in a controlled, secure environment, protected from unauthorized access, use, or disclosure. We keep reasonable administrative, technical, and physical safeguards to protect against unauthorized access, use, modification, and personal data disclosure in its control and custody. However, no data transmission over the Internet or wireless network can be guaranteed.
+                
+                Legal disclosure:
+                We will disclose any information we collect, use or receive if required or permitted by law, such as to comply with a subpoena or similar legal process, and when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.
+                
+                Contact information:
+                If you would like to contact us to understand more about this Policy or wish to contact us concerning any matter relating to individual rights and your Personal Information, you may send an email to legal@stars.my.
+                
+            </p>
 
 
-    <div class="bg-white px-6 py-32 lg:px-8">
-        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-            <p class="text-base font-semibold leading-7 text-indigo-600">Effective: 20 April 2023</p>
-            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Privacy Policy for DCB Platform
-                Limited</h1>
-
-            <div class="mt-16 max-w-2xl">
-                <p class="mt-6">At My Stars, accessible from https://stars.my, one of our main priorities is the privacy of
-                    our visitors. This Privacy Policy document contains types of information that is collected and recorded
-                    by My Stars and how we use it.</p>
-
-                <p class="mt-6">If you have additional questions or require more information about our Privacy Policy, do
-                    not hesitate to contact us.</p>
-
-                <p class="mt-6">This Privacy Policy applies only to our online activities and is valid for visitors to our
-                    website with regards to the information that they shared and/or collect in My Stars. This policy is not
-                    applicable to any information collected offline or via channels other than this website.</p>
-            </div>
-
-            <div class="mt-16 max-w-2xl">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Consent</h2>
-                <p class="mt-6">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-            </div>
-
-            <div class="mt-16 max-w-2xl">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Information we collect</h2>
-
-                <p class="mt-6">The personal information that you are asked to provide, and the reasons why you are asked
-                    to provide it,
-                    will be made clear to you at the point we ask you to provide your personal information.</p>
-                <p class="mt-6">If you contact us directly, we may receive additional information about you such as your
-                    name, email
-                    address, phone number, the contents of the message and/or attachments you may send us, and any other
-                    information you may choose to provide.</p>
-                <p class="mt-6">When you register for an Account, we may ask for your contact information, including items
-                    such as name,
-                    company name, address, email address, and telephone number.</p>
-            </div>
-
-            <div class="mt-16 max-w-2xl">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900">How we use your information</h2>
-
-                <p class="mt-6">We use the information we collect in various ways, including to:</p>
-                <ul class="list-disc">
-                    <li>Provide, operate, and maintain our website</li>
-                    <li>Improve, personalize, and expand our website</li>
-                    <li>Understand and analyze how you use our website</li>
-                    <li>Develop new products, services, features, and functionality</li>
-                    <li>Communicate with you, either directly or through one of our partners, including for customer
-                        service, to provide
-                        you with updates and other information relating to the website, and for marketing and promotional
-                        purposes</li>
-                    <li>Send you emails</li>
-                    <li>Find and prevent fraud</li>
-                </ul>
-            </div>
         </div>
+
+
+
+
     </div>
+</div>
 
 
-
-
-
-
-
-    <h2>Log Files</h2>
-
-    <p>My Stars follows a standard procedure of using log files. These files log visitors when they visit websites. All
-        hosting companies do this and a part of hosting services' analytics. The information collected by log files include
-        internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit
-        pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable.
-        The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the
-        website, and gathering demographic information.</p>
-
-
-
-
-    <h2>Cookies and Web Beacons</h2>
-    <p>Like any other website, My Stars uses "cookies". These cookies are used to store information including visitors'
-        preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize
-        the users' experience by customizing our web page content based on visitors' browser type and/or other information.
-    </p>
-
-
-
-    <h2>Advertising Partners Privacy Policies</h2>
-    <P>You may consult this list to find the Privacy Policy for each of the advertising partners of My Stars.</p>
-    <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in
-        their respective advertisements and links that appear on My Stars, which are sent directly to users' browser. They
-        automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of
-        their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
-    </p>
-
-    <p>Note that My Stars has no access to or control over these cookies that are used by third-party advertisers.</p>
-
-    <h2>Third Party Privacy Policies</h2>
-
-    <p>My Stars's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the
-        respective Privacy Policies of these third-party ad servers for more detailed information. It may include their
-        practices and instructions about how to opt-out of certain options. </p>
-
-    <p>You can choose to disable cookies through your individual browser options. To know more detailed information about
-        cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
-
-    <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
-
-    <p>Under the CCPA, among other rights, California consumers have the right to:</p>
-    <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of
-        personal data that a business has collected about consumers.</p>
-    <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
-    <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
-    <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please
-        contact us.</p>
-
-    <h2>GDPR Data Protection Rights</h2>
-
-    <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the
-        following:</p>
-    <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for
-        this service.</p>
-    <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate.
-        You also have the right to request that we complete the information you believe is incomplete.</p>
-    <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
-    <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal
-        data, under certain conditions.</p>
-    <p>The right to object to processing – You have the right to object to our processing of your personal data, under
-        certain conditions.</p>
-    <p>The right to data portability – You have the right to request that we transfer the data that we have collected to
-        another organization, or directly to you, under certain conditions.</p>
-    <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please
-        contact us.</p>
-
-    <h2>Children's Information</h2>
-
-    <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and
-        guardians to observe, participate in, and/or monitor and guide their online activity.</p>
-
-    <p>My Stars does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you
-        think that your child provided this kind of information on our website, we strongly encourage you to contact us
-        immediately and we will do our best efforts to promptly remove such information from our records.</p>
-
-    <h2>Changes to This Privacy Policy</h2>
-
-    <p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any
-        changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are
-        effective immediately, after they are posted on this page.</p>
-
-
-
-    <h2>Contact Us</h2>
-
-    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
 @endsection
