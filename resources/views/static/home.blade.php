@@ -28,18 +28,18 @@
                         Supercharge your life now!
                     </h1>
                     <p class="mt-6 text-lg leading-8 text-gray-600">
-                        <i>Memoir</i> will improve your learning, memory, work, creativity in your personal and professional
+                        <i>Stars</i> will improve your learning, memory, work, creativity in your personal and professional
                         life.
                     </p>
 
                     <h1 class="mt-10 max-w-lg text-xl font-bold tracking-tight text-gray-900 sm:text-xl">
-                        Download Memoir today
+                        Download Stars today
                     </h1>
                     <div class="mt-4 flex items-center gap-x-6">
-                        <a href="https://apps.apple.com/us/app/my-memoir/id6448801162">
+                        <a href="https://apps.apple.com/us/app/my-stars/id6448814570">
                             <img src="/assets/images/app_store.svg" class="h-12 pr-4 bounce-top-icons">
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=my.memoir.app">
+                        <a href="https://play.google.com/store/apps/details?id=my.stars.app">
                             <img src="/assets/images/play_store.svg" class="h-12 bounce-top-icons">
                         </a>
                     </div>
@@ -431,15 +431,15 @@
         <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
             <div class="mx-auto max-w-2xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Boost your productivity.<br>Start
-                    using <i>Memoir</i> today.</h2>
+                    using <i>Stars</i> today.</h2>
                 <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-                    Download <i>Memoir</i> app now to superchage your personal and professional life today.
+                    Download <i>Stars</i> app now to superchage your personal and professional life today.
                 </p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="https://apps.apple.com/us/app/my-memoir/id6448801162">
+                    <a href="https://apps.apple.com/us/app/my-stars/id6448814570">
                         <img src="/assets/images/app_store.svg" class="h-12 pr-4 bounce-top-icons">
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=my.memoir.app">
+                    <a href="https://play.google.com/store/apps/details?id=my.stars.app">
                         <img src="/assets/images/play_store.svg" class="h-12 bounce-top-icons">
                     </a>
                 </div>

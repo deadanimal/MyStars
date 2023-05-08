@@ -8,18 +8,18 @@
 
             <div class="mt-16 max-w-2xl">
                 <p class="mt-6">
-                    Welcome to My Memoir! These terms and conditions outline the rules and regulations for the use of DCB
+                    Welcome to My Stars! These terms and conditions outline the rules and regulations for the use of DCB
                     Platform Limited's Website, located at
-                    https://memoir.my.
+                    https://stars.my.
                 </p>
                 <p class="mt-6">
                     By accessing this website, we assume you accept these terms and conditions. Do not continue to use My
-                    Memoir if you do
+                    Stars if you do
                     not agree to take all of the terms and conditions stated on this page.
                 </p>
                 <p class="mt-6">
                     Cookies:
-                    The website uses cookies to help personalize your online experience. By accessing My Memoir, you agreed
+                    The website uses cookies to help personalize your online experience. By accessing My Stars, you agreed
                     to use the
                     required cookies.
                 </p>
@@ -46,16 +46,16 @@
                     License:
                     Unless otherwise stated, DCB Platform Limited and/or its licensors own the intellectual property rights
                     for all material
-                    on My Memoir. All intellectual property rights are reserved. You may access this from My Memoir for your
+                    on My Stars. All intellectual property rights are reserved. You may access this from My Stars for your
                     own personal
                     use subjected to restrictions set in these terms and conditions.
 
                     You must not:
 
-                    Copy or republish material from My Memoir
-                    Sell, rent, or sub-license material from My Memoir
-                    Reproduce, duplicate or copy material from My Memoir
-                    Redistribute content from My Memoir
+                    Copy or republish material from My Stars
+                    Sell, rent, or sub-license material from My Stars
+                    Reproduce, duplicate or copy material from My Stars
+                    Redistribute content from My Stars
                     This Agreement shall begin on the date hereof.
 
                     Parts of this website offer users an opportunity to post and exchange opinions and information in
