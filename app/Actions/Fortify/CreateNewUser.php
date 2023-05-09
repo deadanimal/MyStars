@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
+use Illuminate\Support\Str;
+
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -55,7 +57,8 @@ class CreateNewUser implements CreatesNewUsers
         Profile::create([
             'user_id' => $user->id,
             'name' => $user->name,
-            'profile_type' => $profile_type
+            'profile_type' => $profile_type,
+            'uuid' => Str::orderedUuid()
         ]);
         
         return $user;
