@@ -64,9 +64,9 @@ class AuthController extends Controller
                 'token' => $token->plainTextToken,
                 'userId' => $user->uuid,
                 'profileId' => $user->profile->uuid,
-                'profileType' => $user->profile->profileType,
-                'name' => 'name',
-                'username' => 'username',
+                'profileType' => $user->profile->profile_type,
+                'name' => $user->name,
+                'username' => $user->profile->username,
                 'email' => $user->email
             ];
             return $data;
